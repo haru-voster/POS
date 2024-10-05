@@ -41,71 +41,33 @@ def backdate_commit(date_str, commit_message):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-def generate_random_datetime(year, month):
-    """
-    Generate a random date and time within the specified year and month.
-
-    :param year: Year for the random date.
-    :param month: Month for the random date.
-    :return: Random datetime as a string in "YYYY-MM-DD HH:MM:SS" format.
-    """
-    day = random.randint(1, 28)  # To avoid issues with months having fewer days
-    hour = random.randint(0, 23)
-    minute = random.randint(0, 59)
-    second = random.randint(0, 59)
-    return f"{year}-{month:02d}-{day:02d} {hour:02d}:{minute:02d}:{second:02d}"
-
-def get_random_commit_message():
-    """
-    Generate a random commit message related to Python and Qt restaurant billing system.
-    """
-    messages = [
-        "Added table management feature",
-        "Improved item category handling",
-        "Fixed bugs in billing logic",
-        "Updated UI for better usability",
-        "Optimized database queries for performance",
-        "Integrated discount feature for promotions",
-        "Enhanced reporting module",
-        "Implemented order tracking functionality",
-        "Fixed layout issues in the billing screen",
-        "Added support for new payment methods"
-    ]
-    return random.choice(messages)
-
-def create_random_commits(start_date, end_date):
-    """
-    Creates backdated commits on random days between start_date and end_date.
-
-    :param start_date: Start date in the format "YYYY-MM-DD".
-    :param end_date: End date in the format "YYYY-MM-DD".
-    """
-    start = datetime.strptime(start_date, "%Y-%m-%d")
-    end = datetime.strptime(end_date, "%Y-%m-%d")
-
-    current_date = start
-
-    while current_date <= end:
-        year = current_date.year
-        month = current_date.month
-
-        # Generate a random number of commits for the month (5-10 commits)
-        commit_count = random.randint(5, 10)
-        for _ in range(commit_count):
-            date_str = generate_random_datetime(year, month)
-            commit_message = get_random_commit_message()
-            backdate_commit(date_str, commit_message)
-
-        # Move to the next month
-        if month == 12:
-            current_date = datetime(year + 1, 1, 1)
-        else:
-            current_date = datetime(year, month + 1, 1)
-
+# Example usage
 if __name__ == "__main__":
-    # Start date
-    start_date = "2024-01-01"
-    # End date (current date)
-    end_date = datetime.now().strftime("%Y-%m-%d")
 
-    create_random_commits(start_date, end_date)
+    commit_messages = [
+        "Updated item category dropdown",
+        "Optimized bill generation logic",
+        "Enhanced UI responsiveness",
+        "Fixed bug in table reservation system",
+        "Improved database indexing for speed",
+        "Added tax calculation module",
+        "Refactored discount logic",
+        "Improved error handling in the order system",
+        "Enhanced user feedback on invalid input",
+        "Streamlined payment process"
+    ]
+
+    current_date = datetime.now()
+    six_months_ago = current_date - timedelta(days=180)
+
+    for _ in range(10):  # Generate 10 random commits
+        # Generate a random date within the last 6 months
+        random_date = six_months_ago + timedelta(days=random.randint(0, 180))
+        random_time = f"{random.randint(0, 23):02d}:{random.randint(0, 59):02d}:{random.randint(0, 59):02d}"
+        random_date_str = random_date.strftime(f"%Y-%m-%d {random_time}")
+
+        # Choose a random commit message
+        commit_message = random.choice(commit_messages)
+
+        # Call the backdate_commit function
+        backdate_commit(random_date_str, commit_message)

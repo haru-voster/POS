@@ -1016,31 +1016,55 @@ QListWidget::item {
    </property>
   </action>
   <action name="actionOrders">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/orders.png</normaloff>../icon/orders.png</iconset>
+   </property>
    <property name="text">
     <string>Orders</string>
    </property>
   </action>
   <action name="actionReports">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/reports.png</normaloff>../icon/reports.png</iconset>
+   </property>
    <property name="text">
     <string>Reports</string>
    </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/about.png</normaloff>../icon/about.png</iconset>
+   </property>
    <property name="text">
     <string>About</string>
    </property>
   </action>
   <action name="actionDeveloper">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/developer.png</normaloff>../icon/developer.png</iconset>
+   </property>
    <property name="text">
     <string>Developer</string>
    </property>
   </action>
   <action name="actionDatabase_Settings">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/database.png</normaloff>../icon/database.png</iconset>
+   </property>
    <property name="text">
     <string>Database</string>
    </property>
   </action>
   <action name="actionCurrency">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/currency.png</normaloff>../icon/currency.png</iconset>
+   </property>
    <property name="text">
     <string>Currency</string>
    </property>
@@ -1064,6 +1088,10 @@ QListWidget::item {
    </property>
   </action>
   <action name="actionToolbar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/toolbar.png</normaloff>../icon/toolbar.png</iconset>
+   </property>
    <property name="text">
     <string>Show / Hide Toolbar</string>
    </property>
@@ -1071,7 +1099,7 @@ QListWidget::item {
   <action name="actionCreate_Order">
    <property name="icon">
     <iconset>
-     <normaloff>../../../Downloads/add.png</normaloff>../../../Downloads/add.png</iconset>
+     <normaloff>../icon/add.png</normaloff>../icon/add.png</iconset>
    </property>
    <property name="text">
     <string>Create Order</string>

@@ -1,6 +1,6 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QDialog, QListWidgetItem, QWidget, QHBoxLayout, QPushButton, QTableWidgetItem, QHeaderView, \
-QMessageBox
+    QMessageBox, QLabel, QVBoxLayout, QSpacerItem, QSizePolicy
 from PyQt5.QtGui import QIcon
 from PyQt5 import uic
 from service.db_service import DBService
@@ -9,70 +9,80 @@ class Category:
     def __init__(self):
         self.category_name_input = None
         self.category_list_widget = None
-        self.category_table_widget = None
         self.update_dialog = None
         self.category_id_to_update = None
 
-    def set_ui_elements(self, category_name_input, category_list_widget, category_table_widget):
+    def set_ui_elements(self, category_name_input, category_list_widget):
         self.category_name_input = category_name_input
         self.category_list_widget = category_list_widget
-        self.category_table_widget = category_table_widget
 
     def saveCategory(self):
-        category_name = self.category_name_input.text() if self.category_name_input else ""
+        category_name = self.category_name_input.text().title() if self.category_name_input else ""
 
         if category_name:
             if DBService.save_category(category_name):
-                self.loadCategoryTable()
                 self.loadCategoryList()
-                print("Category saved:", category_name)
+                self.category_name_input.clear()
             else:
                 print("Category already exists.")
         else:
             print("Category name is empty.")
 
     def loadCategoryList(self):
+        """Load categories into the category list widget with Edit and Delete buttons."""
         categories = DBService.fetch_categories()
         self.category_list_widget.clear()
-        for category in categories:
-            item_text = f"{category[1]}"
-            item = QListWidgetItem()
-            item.setText(item_text)
-            self.category_list_widget.addItem(item)
 
-    def loadCategoryTable(self):
-        categories = DBService.fetch_categories()
-        self.category_table_widget.clearContents()
-        self.category_table_widget.setAlternatingRowColors(True)
-        self.category_table_widget.setColumnCount(3)
-        self.category_table_widget.setHorizontalHeaderLabels(("#", "Name", "Action"))
-        self.category_table_widget.setColumnWidth(0, 5)
-        self.category_table_widget.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
-        self.category_table_widget.verticalHeader().setVisible(False)
-        self.category_table_widget.horizontalHeader().setDefaultAlignment(Qt.AlignLeft)
-        self.category_table_widget.setRowCount(0)
+        for category_id, category_name in categories:
+            # Create a widget to hold category text and buttons
+            category_widget = QWidget()
+            outer_layout = QVBoxLayout()  # Outer vertical layout
 
-        for inx, category in enumerate(categories):
-            cell_widget = QWidget()
-            layout = QHBoxLayout(cell_widget)
-            editBtn = QPushButton(self.category_table_widget)
-            editBtn.setIcon(QIcon("icon/edit.png"))
-            editBtn.setFixedWidth(30)
-            deleteBtn = QPushButton(self.category_table_widget)
-            deleteBtn.setIcon(QIcon("icon/delete.png"))
-            deleteBtn.setFixedWidth(30)
-            editBtn.clicked.connect(lambda checked, category_id=category[0]: self.showUpdateDialog(category_id))
-            deleteBtn.clicked.connect(lambda checked, category_id=category[0]: self.handleDelete(category_id))
-            layout.addWidget(editBtn)
-            layout.addWidget(deleteBtn)
-            layout.setContentsMargins(0, 0, 0, 0)
-            cell_widget.setLayout(layout)
-            self.category_table_widget.insertRow(inx)
-            self.category_table_widget.setItem(inx, 0, QTableWidgetItem(str(category[0])))
-            self.category_table_widget.setItem(inx, 1, QTableWidgetItem(str(category[1])))
-            self.category_table_widget.setCellWidget(inx, 2, cell_widget)
+            # Category name label
+            category_label = QLabel(category_name)
+            category_label.setStyleSheet("font-size: 14px; color: #111; margin-right : 5px")
+            category_label.setFixedWidth(100)
+            category_label.setFixedHeight(50)
+            category_label.setWordWrap(True)
+            category_label.setAlignment(Qt.AlignCenter | Qt.AlignTop)
+            outer_layout.addWidget(category_label)
 
-    def showUpdateDialog(self, category_id):
+            # Inner horizontal layout for buttons
+            button_layout = QHBoxLayout()
+            # Edit button
+            edit_button = QPushButton()
+            edit_button.setIcon(QIcon("icon/edit.png"))  # Replace with path to edit icon
+            edit_button.setToolTip("Edit Category")
+            edit_button.setStyleSheet("background: transparent; border: none;")
+            edit_button.setFixedSize(30, 30)
+            edit_button.clicked.connect(lambda checked, cat_id=category_id: self.handleEdit(cat_id))
+
+            # Delete button
+            delete_button = QPushButton()
+            delete_button.setIcon(QIcon("icon/delete.png"))  # Replace with path to delete icon
+            delete_button.setToolTip("Delete Category")
+            delete_button.setStyleSheet("background: transparent; border: none;")
+            delete_button.setFixedSize(30, 30)
+            delete_button.clicked.connect(lambda checked, cat_id=category_id: self.handleDelete(cat_id))
+
+            # Add buttons to horizontal layout
+            button_layout.addWidget(edit_button)
+            button_layout.addWidget(delete_button) # Add spacing between buttons
+            button_layout.setAlignment(Qt.AlignCenter)  # Align buttons to the right
+
+            # Add the button layout to the outer vertical layout
+            outer_layout.addLayout(button_layout) # Add margins around the widget
+            # Set layout to widget
+            category_widget.setLayout(outer_layout)
+
+            # Add widget to list
+            list_item = QListWidgetItem()
+            list_item.setSizeHint(category_widget.sizeHint())
+            self.category_list_widget.addItem(list_item)
+            self.category_list_widget.setItemWidget(list_item, category_widget)
+
+
+    def handleEdit(self, category_id):
         self.category_id_to_update = category_id
         self.update_dialog = QDialog()
         uic.loadUi('ui/category_update.ui', self.update_dialog)
@@ -87,13 +97,12 @@ class Category:
         return category_name
 
     def updateCategory(self):
-        new_name = self.update_dialog.category_update_input.text()
+        new_name = self.update_dialog.category_update_input.text().title()
         if new_name:
             DBService.update_category(self.category_id_to_update, new_name)
             print(f"Category ID {self.category_id_to_update} updated to {new_name}")
             self.update_dialog.accept()
             self.loadCategoryList()
-            self.loadCategoryTable()
         else:
             print("New category name is empty.")
 
@@ -108,4 +117,3 @@ class Category:
         if reply == QMessageBox.Yes:
             DBService.delete_category(category_id)
             self.loadCategoryList()
-            self.loadCategoryTable()

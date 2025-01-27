@@ -49,7 +49,7 @@
     <item>
      <widget class="QStackedWidget" name="uimanager">
       <property name="currentIndex">
-       <number>0</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="dashboardpage">
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -112,58 +112,7 @@
            </widget>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="7,3">
-            <item>
-             <widget class="QLabel" name="label_3">
-              <property name="font">
-               <font>
-                <pointsize>10</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QLabel{
-	letter-spacing: 1px;
-}</string>
-              </property>
-              <property name="text">
-               <string> DINE IN</string>
-              </property>
-              <property name="scaledContents">
-               <bool>false</bool>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="font">
-               <font>
-                <pointsize>10</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QLabel{
-	letter-spacing: 1px;
-}</string>
-              </property>
-              <property name="text">
-               <string>DELIVERY</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="7,3">
+           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="7">
             <item>
              <widget class="QListWidget" name="orders_dine_list_widget">
               <property name="contextMenuPolicy">
@@ -203,29 +152,6 @@
               </property>
              </widget>
             </item>
-            <item>
-             <widget class="QListWidget" name="orders_delivery_list_widget">
-              <property name="styleSheet">
-               <string notr="true">QListWidget {
-	background-color: #FFFFFF;
-	border: 1px solid #ccc;
-	font-size: 18px;
-	font-weight: bold;
-	border-radius: 5px;
-}
-
-QListWidget::item {
-	width: 150px;
-	height: 150px;
-	margin: 5px;
-	color: #666666;
-}</string>
-              </property>
-              <property name="viewMode">
-               <enum>QListView::ListMode</enum>
-              </property>
-             </widget>
-            </item>
            </layout>
           </item>
          </layout>
@@ -251,7 +177,7 @@ QListWidget::item {
                <widget class="QLineEdit" name="items_name_input">
                 <property name="minimumSize">
                  <size>
-                  <width>350</width>
+                  <width>200</width>
                   <height>35</height>
                  </size>
                 </property>
@@ -275,7 +201,7 @@ QListWidget::item {
                <widget class="QComboBox" name="items_category_combo">
                 <property name="minimumSize">
                  <size>
-                  <width>300</width>
+                  <width>150</width>
                   <height>35</height>
                  </size>
                 </property>
@@ -308,7 +234,7 @@ QListWidget::item {
                <widget class="QLineEdit" name="items_price_input">
                 <property name="minimumSize">
                  <size>
-                  <width>0</width>
+                  <width>40</width>
                   <height>35</height>
                  </size>
                 </property>
@@ -321,87 +247,62 @@ QListWidget::item {
                 </property>
                </widget>
               </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <item>
-             <widget class="QLabel" name="label_description">
-              <property name="text">
-               <string>Description</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="items_description_input">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>35</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QLineEdit{
+              <item>
+               <widget class="QLabel" name="label_vn">
+                <property name="text">
+                 <string>Meal Type</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="items_mtype_combo">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox{
 	border-radius: 3px;
 	padding-left: 10px;
 	box-shadow: none;
 }</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_vn">
-              <property name="text">
-               <string>Meal Type</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="items_mtype_combo">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>35</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QComboBox{
-	border-radius: 3px;
-	padding-left: 10px;
-	box-shadow: none;
-}</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>Veg</string>
-               </property>
+                </property>
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Veg</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Non-Veg</string>
+                 </property>
+                </item>
+               </widget>
               </item>
               <item>
-               <property name="text">
-                <string>Non-Veg</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="add_items_btn">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>35</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton{
+               <widget class="QPushButton" name="add_items_btn">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
 	padding: 10px 20px;
 	background: #F94449;
 	color: #FFFFFF;
@@ -410,22 +311,27 @@ QListWidget::item {
 	box-shadow: none;
 }
 </string>
-              </property>
-              <property name="text">
-               <string>ADD</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-              <property name="default">
-               <bool>true</bool>
-              </property>
-              <property name="flat">
-               <bool>false</bool>
-              </property>
-             </widget>
+                </property>
+                <property name="text">
+                 <string>ADD</string>
+                </property>
+                <property name="autoDefault">
+                 <bool>false</bool>
+                </property>
+                <property name="default">
+                 <bool>true</bool>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
            </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3"/>
           </item>
           <item>
            <widget class="Line" name="line">
@@ -438,7 +344,7 @@ QListWidget::item {
            </widget>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="7,3">
+           <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="7">
             <item>
              <layout class="QVBoxLayout" name="verticalLayout">
               <item>
@@ -520,13 +426,13 @@ QListWidget::item {
 	border: 1px solid #ccc;
 	font-size: 18px;
 	font-weight: bold;
+	padding: 10px;
 }
 
 QListWidget::item {
-	width: 150px;
-	height: 150px;
-	margin: 5px;
-	color: #666666;
+	width: 160px;
+	height: 200px;
+	margin-bottom: 10px 
 }</string>
                 </property>
                 <property name="verticalScrollBarPolicy">
@@ -542,10 +448,13 @@ QListWidget::item {
                  <enum>QAbstractItemView::NoDragDrop</enum>
                 </property>
                 <property name="defaultDropAction">
-                 <enum>Qt::IgnoreAction</enum>
+                 <enum>Qt::CopyAction</enum>
                 </property>
                 <property name="alternatingRowColors">
                  <bool>false</bool>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::NoSelection</enum>
                 </property>
                 <property name="textElideMode">
                  <enum>Qt::ElideMiddle</enum>
@@ -559,34 +468,39 @@ QListWidget::item {
                 <property name="isWrapping" stdset="0">
                  <bool>true</bool>
                 </property>
+                <property name="resizeMode">
+                 <enum>QListView::Fixed</enum>
+                </property>
                 <property name="layoutMode">
                  <enum>QListView::SinglePass</enum>
                 </property>
+                <property name="spacing">
+                 <number>10</number>
+                </property>
                 <property name="gridSize">
                  <size>
-                  <width>130</width>
-                  <height>150</height>
+                  <width>160</width>
+                  <height>200</height>
                  </size>
                 </property>
                 <property name="viewMode">
-                 <enum>QListView::IconMode</enum>
+                 <enum>QListView::ListMode</enum>
+                </property>
+                <property name="modelColumn">
+                 <number>0</number>
+                </property>
+                <property name="uniformItemSizes">
+                 <bool>false</bool>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
                 </property>
+                <property name="selectionRectVisible">
+                 <bool>false</bool>
+                </property>
                </widget>
               </item>
              </layout>
-            </item>
-            <item>
-             <widget class="QTableWidget" name="items_table_widget">
-              <property name="sizeIncrement">
-               <size>
-                <width>0</width>
-                <height>0</height>
-               </size>
-              </property>
-             </widget>
             </item>
            </layout>
           </item>
@@ -694,7 +608,7 @@ QListWidget::item {
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="8,2">
+           <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="8">
             <item>
              <widget class="QListWidget" name="category_list_widget">
               <property name="styleSheet">
@@ -706,12 +620,10 @@ QListWidget::item {
 }
 
 QListWidget::item {
-	width: 100px;
-	height: 100px;
-	white-space: no-wrap;
+	width: 120px;
+	height: 120px;
 	margin: 5px;
 	color: #666666;
-	padding: 10px;
 	background: #E1F8DC;
 	border-radius: 10px;
 
@@ -732,6 +644,12 @@ QListWidget::item {
               <property name="movement">
                <enum>QListView::Static</enum>
               </property>
+              <property name="gridSize">
+               <size>
+                <width>120</width>
+                <height>120</height>
+               </size>
+              </property>
               <property name="viewMode">
                <enum>QListView::IconMode</enum>
               </property>
@@ -742,9 +660,6 @@ QListWidget::item {
                <bool>false</bool>
               </property>
              </widget>
-            </item>
-            <item>
-             <widget class="QTableWidget" name="category_table_widget"/>
             </item>
            </layout>
           </item>
@@ -852,7 +767,7 @@ QListWidget::item {
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="8,2">
+           <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="8">
             <item>
              <widget class="QListWidget" name="table_list_widget">
               <property name="styleSheet">
@@ -864,12 +779,11 @@ QListWidget::item {
 }
 
 QListWidget::item {
-	width: 100px;
-	height: 100px;
-	white-space: no-wrap;
-	margin: 5px;
+	width: 120px;
+	height: 150px;
 	color: #666666;
 	padding: 10px;
+	margin-top: 10px;
 	background: #E1F8DC;
 	border-radius: 10px;
 
@@ -890,6 +804,15 @@ QListWidget::item {
               <property name="movement">
                <enum>QListView::Static</enum>
               </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="gridSize">
+               <size>
+                <width>120</width>
+                <height>150</height>
+               </size>
+              </property>
               <property name="viewMode">
                <enum>QListView::IconMode</enum>
               </property>
@@ -901,15 +824,219 @@ QListWidget::item {
               </property>
              </widget>
             </item>
-            <item>
-             <widget class="QTableWidget" name="table_table_widget"/>
-            </item>
            </layout>
           </item>
          </layout>
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="allorderspage">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="0,0,0,0">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Search</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="orders_page_search_input">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	border-radius: 3px;
+	box-shadow: none;
+	padding-left: 10px;
+}	</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="orders_page_search_btn">
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+	padding: 10px 20px;
+	background: #F94449;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-radius: 3px;
+	box-shadow: none;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Search</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="datepicker">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="wrapping">
+               <bool>true</bool>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="orders_page_table_widget">
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderHighlightSections">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="khatabook">
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QComboBox" name="comboBox">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QComboBox{
+	border-radius: 3px;
+	padding-left: 10px;
+	box-shadow: none;
+}</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>DEBIT</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>CREDIT</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	border-radius: 3px;
+	padding-left: 10px;
+	box-shadow: none;
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>Amount</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_3">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	border-radius: 3px;
+	padding-left: 10px;
+	box-shadow: none;
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>Reamark</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>ADD</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWidget"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+		margin-right: 10px;
+		margin-top: 10px;
+		margin-bottom: -10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>© 2024 Ajay Randhawa (+91-7696355852)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
      </widget>
     </item>
    </layout>
@@ -953,7 +1080,6 @@ QListWidget::item {
     </property>
     <addaction name="actionCreate_Order"/>
     <addaction name="actionOrders"/>
-    <addaction name="actionReports"/>
    </widget>
    <addaction name="menuMenu"/>
    <addaction name="menuInvoices"/>
@@ -977,6 +1103,12 @@ QListWidget::item {
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
    <property name="toolButtonStyle">
     <enum>Qt::ToolButtonTextUnderIcon</enum>
    </property>
@@ -990,6 +1122,8 @@ QListWidget::item {
     <bool>false</bool>
    </attribute>
    <addaction name="actionDashboard"/>
+   <addaction name="separator"/>
+   <addaction name="actionOrders"/>
    <addaction name="separator"/>
    <addaction name="actionItems"/>
    <addaction name="actionCategory"/>
@@ -1103,6 +1237,15 @@ QListWidget::item {
    </property>
    <property name="text">
     <string>Create Order</string>
+   </property>
+  </action>
+  <action name="actionKhatabook">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon/khatabook.png</normaloff>../icon/khatabook.png</iconset>
+   </property>
+   <property name="text">
+    <string>Khatabook</string>
    </property>
   </action>
  </widget>

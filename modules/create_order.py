@@ -2,60 +2,60 @@ import sqlite3
 from datetime import datetime
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QDialog, QListWidgetItem, QWidget, QVBoxLayout, QLabel, QComboBox, QListWidget, QMainWindow, \
-    QPushButton, QFrame, QLineEdit, QHBoxLayout, QStatusBar
+from PyQt5.QtWidgets import QDialog, QListWidgetItem, QWidget, QVBoxLayout, QLabel, QComboBox, QListWidget, QMainWindow, QPushButton, QFrame, QLineEdit, QHBoxLayout, QStatusBar
 from PyQt5 import uic
 
 from config import CURRENCY
+from modules.orders import Orders
 from modules.update_order import UpdateOrder
 from service.db_service import DBService
 
 
 class CreateOrder:
     def __init__(self):
+        super(CreateOrder, self).__init__()
 
         self.cart_items = []
+        self.create_order_dialog= QDialog()
 
-        self.create_order_window= QMainWindow()
-        uic.loadUi('ui/create_order.ui', self.create_order_window)
-        self.items_browser_list_widget = self.create_order_window.findChild(QListWidget, 'itemsBrowserListWidget')
-        self.cart_list_widget = self.create_order_window.findChild(QListWidget, 'cart_list_widget')
+        uic.loadUi('ui/create_order_dialog.ui', self.create_order_dialog)
+        self.items_browser_list_widget = self.create_order_dialog.findChild(QListWidget, 'itemsBrowserListWidget')
+        self.cart_list_widget = self.create_order_dialog.findChild(QListWidget, 'cart_list_widget')
 
-        self.cart_statusbar = self.create_order_window.findChild(QStatusBar, 'cart_statusbar')
+        self.cart_statusbar = self.create_order_dialog.findChild(QStatusBar, 'cart_statusbar')
 
-        self.corders_category_combo = self.create_order_window.findChild(QComboBox, 'corders_category_combo')
+        self.corders_category_combo = self.create_order_dialog.findChild(QComboBox, 'corders_category_combo')
         self.corders_category_combo.currentTextChanged.connect(self.filter_items)
 
-        self.corders_search_input = self.create_order_window.findChild(QLineEdit, 'corders_search_input')
+        self.corders_search_input = self.create_order_dialog.findChild(QLineEdit, 'corders_search_input')
         self.corders_search_input.textChanged.connect(self.performSearch)
 
-        self.create_order_btn = self.create_order_window.findChild(QPushButton, 'create_order_btn')
+        self.create_order_btn = self.create_order_dialog.findChild(QPushButton, 'create_order_btn')
         self.create_order_btn.clicked.connect(self.createOrder)
 
-        self.cart_total_label = self.create_order_window.findChild(QLabel, 'cart_total_label')
-        self.cart_table_combo = self.create_order_window.findChild(QComboBox, 'cart_table_combo')
+        self.cart_total_label = self.create_order_dialog.findChild(QLabel, 'cart_total_label')
+        self.cart_table_combo = self.create_order_dialog.findChild(QComboBox, 'cart_table_combo')
 
-        self.customer_name_input = self.create_order_window.findChild(QLineEdit, 'customer_name_input')
-        self.customer_mobile_input = self.create_order_window.findChild(QLineEdit, 'customer_mobile_input')
-        self.customer_address_input = self.create_order_window.findChild(QLineEdit, 'customer_address_input')
-        self.customer_discount_input = self.create_order_window.findChild(QLineEdit, 'customer_discount_input')
+        self.customer_name_input = self.create_order_dialog.findChild(QLineEdit, 'customer_name_input')
+        self.customer_mobile_input = self.create_order_dialog.findChild(QLineEdit, 'customer_mobile_input')
+        self.customer_address_input = self.create_order_dialog.findChild(QLineEdit, 'customer_address_input')
 
         connection = sqlite3.connect("db/database.db")
         cursor = connection.cursor()
         cursor.execute('''CREATE TABLE IF NOT EXISTS cart (cart_id INTEGER PRIMARY KEY AUTOINCREMENT, item_name TEXT, item_price TEXT, item_qty TEXT);''')
         connection.close()
 
-
     def showDialog(self):
-        self.create_order_window.showMaximized()
-        self.create_order_window.show()
+        print("Creating order dialog...")
+        self.create_order_dialog.showMaximized()
         self.loadItemsList()
         self.load_categories_in_combo()
         self.loadCartList()
         self.load_tables_in_combo()
+        self.calculateCartTotal()
+        self.create_order_dialog.show()
 
     def loadItemsList(self, category_filter=None, search_term=None):
-
         items = DBService.fetch_items(category_filter=category_filter, search_term=search_term)
         if not self.items_browser_list_widget:
             print("List widget not initialized.")
@@ -63,36 +63,51 @@ class CreateOrder:
 
         self.items_browser_list_widget.clear()  # Clear existing items
 
-        for index, (item_id, item_name, item_category, item_price, _, mtype) in enumerate(items):
+        for index, (item_id, item_name, item_category, item_price, mtype, variation_names, variation_prices) in enumerate(items):
             # Create item widget for each item
             item_widget = QWidget()
             item_layout = QVBoxLayout()
 
             # Set background color based on type (Veg/Non-Veg)
             background_color = "#D4F7C5" if mtype == "Veg" else "#FFD1D1"
-            item_widget.setStyleSheet(f"background-color: {background_color}; border-radius: 10px; padding: 5px 2px;")
+            item_widget.setStyleSheet(f"background-color: {background_color}; border-radius: 10px;")
 
             # Item name label
             text_up_label = QLabel(item_name)
-            text_up_label.setStyleSheet("font-size: 12px; color: #333; font-weight: bold;")
+            text_up_label.setStyleSheet("font-size: 12px; color: #333; font-weight: bold; margin-right: 10px; margin-bottom: 10px")
             text_up_label.setWordWrap(True)
-            text_up_label.setFixedWidth(100)
-            text_up_label.setFixedHeight(150)
+            text_up_label.setFixedWidth(130)
+            text_up_label.setFixedHeight(50)
             text_up_label.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
 
-            # Price label
-            price_label = QLabel("{}{}".format(CURRENCY, item_price))
-            price_label.setStyleSheet("font-size: 14px; color: #333;")
-            price_label.setAlignment(Qt.AlignCenter)
+            # Add variation label if variations exist, otherwise show item price
+            if variation_names and variation_prices:
+                variation_list = variation_names.split(",")
+                price_list = variation_prices.split(",")
+                variation_text = "\n".join(
+                    [f"{name.strip()} - {CURRENCY}{price.strip()}" for name, price in zip(variation_list, price_list)]
+                )
+                variation_label = QLabel(variation_text)
+                variation_label.setStyleSheet("font-size: 12px; color: #333; font-weight: bold; margin-right: 10px;")
+                variation_label.setWordWrap(True)
+                variation_label.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
+            else:
+                variation_label = QLabel(f"{CURRENCY}{item_price}")
+                variation_label.setStyleSheet("font-size: 12px; color: #333; font-weight: bold; margin-right: 10px;")
+                variation_label.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
+
+            variation_label.setWordWrap(True)
+            variation_label.setFixedWidth(130)
+            variation_label.setFixedHeight(60)
+            variation_label.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
 
             # "Add" button
             add_button = QPushButton("Add")
-            add_button.setStyleSheet("background-color: #1FD655; color: white; font-weight: bold; padding: 5px; border-radius: 5px;")
-
-            add_button.clicked.connect(lambda checked, item_id=item_id, item_name=item_name, item_price=item_price: self.addItemToOrder(item_name=item_name, item_price=item_price))
+            add_button.setStyleSheet("background-color: #1FD655; color: white; font-weight: bold; padding: 5px; border-radius: 5px; margin-top: 20px")
+            add_button.clicked.connect(lambda checked, item_id=item_id : self.addItemToOrder(item_id))
             # Add widgets to layout
             item_layout.addWidget(text_up_label)
-            item_layout.addWidget(price_label)
+            item_layout.addWidget(variation_label)  # Add variation label here
             item_layout.addWidget(add_button)
             item_layout.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
             item_widget.setLayout(item_layout)
@@ -104,15 +119,8 @@ class CreateOrder:
             self.items_browser_list_widget.setItemWidget(list_item, item_widget)
 
     def loadCartList(self):
-        # Connect to the SQLite database
-        connection = sqlite3.connect("db/database.db")
-        cursor = connection.cursor()
 
-        # Fetch all items from the cart
-        cursor.execute("SELECT cart_id, item_name, item_price, item_qty FROM cart")
-        items = cursor.fetchall()  # This will return a list of tuples
-        connection.close()
-
+        items = DBService.get_cart_items()
         # Clear the cart list widget
         self.cart_list_widget.clear()
 
@@ -121,26 +129,38 @@ class CreateOrder:
             item_widget = QWidget()
             item_layout = QHBoxLayout()  # Using a horizontal layout
 
-            # Item name label
-            name_label = QLabel(item_name)
+            item_price = item_price.replace(",", "")  # Remove commas in case of formatted numbers
+
+            try:
+                item_price = float(item_price)
+            except (ValueError, TypeError):
+                item_price = 0.0  # Set to 0.0 or any default value if conversion fails
+
+            # Concatenate name and price in the label
+            name_label = QLabel(f"{item_name} ({CURRENCY}{item_price:.2f})")
             name_label.setStyleSheet("font-size: 14px; color: #333; font-weight: bold;")
-            name_label.setFixedWidth(200)
+            name_label.setFixedWidth(400)
 
             # Quantity label
             qty_label = QLabel(str(item_qty))
             qty_label.setStyleSheet("font-size: 12px; color: #333;")
             qty_label.setAlignment(Qt.AlignCenter | Qt.AlignHCenter)
 
-            # Total price label
-            total_price = float(item_price) * int(item_qty)
-            total_label = QLabel("{}{}".format(CURRENCY, item_price))
-            total_label.setStyleSheet("font-size: 12px; color: #333;")
+            try:
+                total_price = float(item_price) * int(item_qty)  # Calculate total price
+            except ValueError:
+                total_price = 0.0  # Default to 0 if the price or quantity is not numeric
+
+            # Create total label with formatted total_price to 2 decimal places
+            total_label = QLabel("{}{:.2f}".format(CURRENCY, total_price))
+            total_label.setStyleSheet("font-size: 12px; color: #333; font-weight: bold;")
 
             # "+" button to increment quantity
             increment_button = QPushButton("+")
             increment_button.setStyleSheet(
                 "background-color: #1FD655; color: white; font-weight: bold; padding: 5px; border-radius: 5px;"
             )
+            increment_button.setFixedSize(20, 20)
             increment_button.clicked.connect(lambda checked, cart_id=cart_id: self.updateQuantity(cart_id, 1))
 
             # "-" button to decrement quantity
@@ -148,6 +168,7 @@ class CreateOrder:
             decrement_button.setStyleSheet(
                 "background-color: #FF5C5C; color: white; font-weight: bold; padding: 5px; border-radius: 5px;"
             )
+            decrement_button.setFixedSize(20, 20)
             decrement_button.clicked.connect(lambda checked, cart_id=cart_id: self.updateQuantity(cart_id, -1))
 
             # Add widgets to layout
@@ -165,8 +186,59 @@ class CreateOrder:
             list_item.setSizeHint(item_widget.sizeHint())
             self.cart_list_widget.addItem(list_item)
             self.cart_list_widget.setItemWidget(list_item, item_widget)
-            cart_total = self.calculateCartTotal()
-            self.cart_total_label.setText("{}{:.2f}".format(CURRENCY, cart_total))
+
+    def addItemToOrder(self, item_id):
+        if DBService.getVariationCount(item_id) == 0:
+            DBService.add_item_to_cart(item_id)
+            self.loadCartList()
+            self.calculateCartTotal()
+        else:
+            # Show dialog for variations
+            self.cart_variation_dialog = QDialog()
+            uic.loadUi('ui/cart_variation.ui', self.cart_variation_dialog)
+
+            # Clear and populate variation list
+            cart_variation_list = self.cart_variation_dialog.findChild(QListWidget, 'cart_variation_list')
+            cart_variation_list.clear()
+
+            variations = DBService.fetch_variations(item_id)
+            for vid, v_name, v_price in variations:
+                print(v_name)
+                variation_widget = QWidget()
+                variation_layout = QVBoxLayout()
+
+                # Variation Name Label
+                name_label = QLabel(v_name)
+                name_label.setStyleSheet("font-size: 12px; color: #333; font-weight: bold;")
+                name_label.setFixedWidth(70)
+                name_label.setFixedHeight(30)
+                name_label.setWordWrap(True)
+                name_label.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
+
+                # Variation Price Label
+                price_label = QLabel(f"{CURRENCY}{v_price}")
+                price_label.setStyleSheet("font-size: 12px; color: #333;")
+                price_label.setAlignment(Qt.AlignCenter)
+
+                # Add Button
+                add_button = QPushButton("Add")
+                add_button.setStyleSheet("background-color: #1FD655; color: white; font-weight: bold; padding: 5px; border-radius: 5px;")
+                add_button.clicked.connect(lambda checked, var_id=vid: self.addVariationToCart(var_id))
+
+                # Add widgets to layout
+                variation_layout.addWidget(name_label)
+                variation_layout.addWidget(price_label)
+                variation_layout.addWidget(add_button)
+                variation_widget.setLayout(variation_layout)
+
+                # Add variation widget to list
+                list_item = QListWidgetItem()
+                list_item.setSizeHint(variation_widget.sizeHint())
+                cart_variation_list.addItem(list_item)
+                cart_variation_list.setItemWidget(list_item, variation_widget)
+
+            self.cart_variation_dialog.exec_()
+
 
     def load_categories_in_combo(self):
         categories = DBService.fetch_categories()
@@ -192,47 +264,42 @@ class CreateOrder:
         self.loadItemsList(category_filter=category_filter, search_term=search_term)
 
 
-    def addItemToOrder(self, item_name, item_price, item_qty = 1):
-        DBService.add_item_to_order(item_name, item_price, item_qty)
-        self.loadCartList()
-
     def updateQuantity(self, cart_id, change):
         DBService.update_quantity(cart_id, change)
         self.loadCartList()
-
-    def calculateCartTotal(self):
-        connection = sqlite3.connect("db/database.db")
-        cursor = connection.cursor()
-        cursor.execute("SELECT SUM(item_price * item_qty) FROM cart")
-        result = cursor.fetchone()
-        connection.close()
-        total = result[0] if result[0] is not None else 0.0
-        return total
+        self.calculateCartTotal()
 
     def load_tables_in_combo(self):
         tables = DBService.fetch_tables()
         self.cart_table_combo.clear()
-        self.cart_table_combo.addItem('Delivery')
+        self.cart_table_combo.addItem('Dine')
 
         for table in tables:
             self.cart_table_combo.addItem(str(table[1]))
 
+        self.cart_table_combo.addItem('Delivery')
+
     def createOrder(self):
         # Corrected: Remove trailing commas
         shop_table = self.cart_table_combo.currentText()
-        name = self.customer_name_input.text()
+        name = self.customer_name_input.text().upper()
         mobile = self.customer_mobile_input.text()
-        address = self.customer_address_input.text()
-        discount = float(self.customer_discount_input.text() or "0")  # Convert discount to float
-        DBService.create_order(shop_table, name, mobile, address, discount)
-
-        self.cart_statusbar.setStyleSheet("color : #1FD655")
-        self.cart_statusbar.showMessage("Order placed successfully", 5000)
+        address = self.customer_address_input.text().upper()
+        DBService.create_order(shop_table, name, mobile, address)
         self.loadCartList()  # Refresh cart UI
         self.calculateCartTotal()  # Update total label
+        self.create_order_dialog.close()
 
 
+    def calculateCartTotal(self):
+        cart_total = DBService.calculate_cart_total()
+        self.cart_total_label.setText("{}{:.2f}".format(CURRENCY, cart_total))
 
+    def addVariationToCart(self, variation_id):
+        if DBService.add_variation_to_cart(variation_id):
+            self.cart_variation_dialog.close()
+            self.loadCartList()
+            self.calculateCartTotal()
 
 
 

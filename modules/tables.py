@@ -1,8 +1,8 @@
 import sqlite3
 from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtWidgets import QDialog, QListWidgetItem, QWidget, QHBoxLayout, QPushButton, QTableWidgetItem, QHeaderView, \
-    QMessageBox
-from PyQt5.QtGui import QIcon
+    QMessageBox, QVBoxLayout, QLabel
+from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5 import uic
 
 from service.db_service import DBService
@@ -15,17 +15,15 @@ class Tables:
         self.update_dialog = None
         self.table_id_to_update = None
 
-    def set_ui_elements(self, table_name_input, table_list_widget, table_table_widget):
+    def set_ui_elements(self, table_name_input, table_list_widget):
         self.table_name_input = table_name_input
         self.table_list_widget = table_list_widget
-        self.table_table_widget = table_table_widget
 
     def saveTable(self):
-        table_name = self.table_name_input.text() if self.table_name_input else ""
+        table_name = self.table_name_input.text().title() if self.table_name_input else ""
 
         if table_name:
             if DBService.save_table(table_name):  # Using the DBService save_table method
-                self.loadTableTable()
                 self.loadTableList()
                 print("Table saved:", table_name)
             else:
@@ -37,54 +35,65 @@ class Tables:
         tables = DBService.fetch_tables()  # Using DBService to fetch tables
         self.table_list_widget.clear()
 
-        for table_name in tables:
-            item_text = f"{table_name[1]}"
-            item = QListWidgetItem()
-            icon = QIcon("icon/table.png")
-            item.setIcon(icon)
-            item.setText(item_text)
-            self.table_list_widget.setIconSize(QSize(64, 64))
-            self.table_list_widget.addItem(item)
+        for table_id, table_name in tables:
+            # Create a widget to hold table icon, name, and buttons
+            table_widget = QWidget()
+            table_layout = QVBoxLayout()
 
-    def loadTableTable(self):
-        tables = DBService.fetch_tables()  # Using DBService to fetch tables
-        self.table_table_widget.clearContents()
-        self.table_table_widget.setAlternatingRowColors(True)
-        self.table_table_widget.setColumnCount(3)
-        self.table_table_widget.setHorizontalHeaderLabels(("#", "Name", "Action"))
+            # Create a horizontal layout for the buttons
+            button_layout = QHBoxLayout()
 
-        self.table_table_widget.setColumnWidth(0, 5)
-        self.table_table_widget.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
-        self.table_table_widget.verticalHeader().setVisible(False)
-        self.table_table_widget.horizontalHeader().setDefaultAlignment(Qt.AlignLeft)
-        self.table_table_widget.setRowCount(0)
+            # Table icon
+            table_icon_label = QLabel()
+            table_icon_label.setPixmap(QPixmap("icon/table.png"))
+            table_icon_label.setAlignment(Qt.AlignTop | Qt.AlignCenter)
+            table_icon_label.setStyleSheet("margin-right: 15px")
+            table_icon_label.setMinimumWidth(100)
+            table_icon_label.setMinimumHeight(40)
 
-        for inx, table in enumerate(tables):
-            cell_widget = QWidget()
-            layout = QHBoxLayout(cell_widget)
+            # Table name label
+            table_name_label = QLabel(table_name)
+            table_name_label.setStyleSheet("font-size: 14px; color: #333; font-weight: bold; margin-top: 8px")
+            table_name_label.setAlignment(Qt.AlignCenter)
 
-            editBtn = QPushButton(self.table_table_widget)
-            editBtn.setIcon(QIcon("icon/edit.png"))
-            editBtn.setFixedWidth(30)
+            # Edit button
+            edit_button = QPushButton()
+            edit_button.setIcon(QIcon("icon/edit.png"))  # Replace with path to edit icon
+            edit_button.setToolTip("Edit Table")
+            edit_button.setFixedSize(30, 30)
+            edit_button.setStyleSheet("border: none; background: transparent;")
+            edit_button.clicked.connect(lambda checked, tbl_id=table_id: self.handleEdit(tbl_id))
 
-            deleteBtn = QPushButton(self.table_table_widget)
-            deleteBtn.setIcon(QIcon("icon/delete.png"))
-            deleteBtn.setFixedWidth(30)
+            # Delete button
+            delete_button = QPushButton()
+            delete_button.setIcon(QIcon("icon/delete.png"))  # Replace with path to delete icon
+            delete_button.setToolTip("Delete Table")
+            delete_button.setFixedSize(30, 30)
+            delete_button.setStyleSheet("border: none; background: transparent;")
+            delete_button.clicked.connect(lambda checked, tbl_id=table_id: self.handleDelete(tbl_id))
 
-            editBtn.clicked.connect(lambda checked, table_id=table[0]: self.showUpdateDialog(table_id))
-            deleteBtn.clicked.connect(lambda checked, table_id=table[0]: self.handleDelete(table_id))
+            # Add spacer between buttons
+            button_layout.addWidget(edit_button)
+            button_layout.addWidget(delete_button)
 
-            layout.addWidget(editBtn)
-            layout.addWidget(deleteBtn)
-            layout.setContentsMargins(0, 0, 0, 0)
-            cell_widget.setLayout(layout)
+            # Add components to the vertical layout
+            table_layout.addWidget(table_icon_label)
+            table_layout.addWidget(table_name_label)
+            table_layout.addLayout(button_layout)
+            table_layout.setAlignment(Qt.AlignCenter)
+            table_layout.setContentsMargins(5,5,5,5)
 
-            self.table_table_widget.insertRow(inx)
-            self.table_table_widget.setItem(inx, 0, QTableWidgetItem(str(table[0])))
-            self.table_table_widget.setItem(inx, 1, QTableWidgetItem(str(table[1])))
-            self.table_table_widget.setCellWidget(inx, 2, cell_widget)
+            # Set layout to widget
+            table_widget.setLayout(table_layout)
 
-    def showUpdateDialog(self, table_id):
+            # Add widget to list
+            list_item = QListWidgetItem()
+            list_item.setSizeHint(table_widget.sizeHint())
+            self.table_list_widget.addItem(list_item)
+            self.table_list_widget.setItemWidget(list_item, table_widget)
+
+
+    def handleEdit(self, table_id):
         self.table_id_to_update = table_id
         self.update_dialog = QDialog()
         uic.loadUi('ui/table_update.ui', self.update_dialog)
@@ -96,12 +105,11 @@ class Tables:
         self.update_dialog.exec_()
 
     def updateTable(self):
-        new_name = self.update_dialog.table_update_input.text()
+        new_name = self.update_dialog.table_update_input.text().title()
         if new_name:
             if DBService.update_table(self.table_id_to_update, new_name):  # Using DBService update_table
                 self.update_dialog.accept()
                 self.loadTableList()
-                self.loadTableTable()
         else:
             print("New table name is empty.")
 
@@ -117,5 +125,4 @@ class Tables:
         if reply == QMessageBox.Yes:
             if DBService.delete_table(table_id):  # Using DBService delete_table
                 self.loadTableList()
-                self.loadTableTable()
 

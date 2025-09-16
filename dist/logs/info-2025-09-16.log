@@ -172,3 +172,20 @@
 2025-09-16 11:57:33,861 - INFO - Fetched 10 orders successfully.
 2025-09-16 11:58:18,827 - INFO - Fetched 14 categories successfully.
 2025-09-16 11:58:18,851 - INFO - Fetched 59 items successfully.
+2025-09-16 12:06:11,537 - INFO - Fetched 59 items successfully.
+2025-09-16 12:06:12,340 - INFO - Fetched 13 orders successfully.
+2025-09-16 12:06:12,537 - INFO - Fetched 10 orders successfully.
+2025-09-16 12:06:16,059 - INFO - Fetched 14 categories successfully.
+2025-09-16 12:06:16,074 - INFO - Fetched 0 items successfully.
+2025-09-16 12:06:16,090 - INFO - Fetched 2 tables successfully.
+2025-09-16 12:06:16,139 - INFO - Fetched 59 items successfully.
+2025-09-16 12:06:25,015 - INFO - Order info fetched successfully for order_id: 18
+2025-09-16 12:07:14,629 - INFO - Order with ID 18 updated successfully.
+2025-09-16 12:07:15,685 - INFO - Fetched 9 orders successfully.
+2025-09-16 12:07:21,425 - INFO - Fetched 2 tables successfully.
+2025-09-16 12:07:23,200 - INFO - Fetched 14 categories successfully.
+2025-09-16 12:07:24,738 - INFO - Fetched 14 categories successfully.
+2025-09-16 12:07:24,762 - INFO - Fetched 0 items successfully.
+2025-09-16 12:07:24,780 - INFO - Fetched 59 items successfully.
+2025-09-16 12:07:27,411 - INFO - Fetched 13 orders successfully.
+2025-09-16 12:07:36,363 - INFO - Fetched 9 orders successfully.

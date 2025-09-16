@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Restro Calc</string>
+   <string>RESTAURANT POS</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -1032,7 +1032,7 @@ QListWidget::item {
 }</string>
       </property>
       <property name="text">
-       <string>© 2024 Ajay Randhawa (+91-7696355852)</string>
+       <string>© 2025 Haru-voster || Developer +254 708 466 793</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

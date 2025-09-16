@@ -36,10 +36,10 @@ class PrintService:
             for item_id, item_name, item_qty, item_price in items:
                 line_total = int(item_qty) * float(item_price)  # Calculate line total
                 total += line_total
-                receipt.append(f"{item_name:20} x{item_qty}  ₹{line_total:.2f}")  # Format receipt line
+                receipt.append(f"{item_name:20} x{item_qty}  Kshs.{line_total:.2f}")  # Format receipt line
 
             receipt.append("-" * 30)
-            receipt.append(f"Total: ₹{total:.2f}")
+            receipt.append(f"Total: Kshs.{total:.2f}")
             receipt.append("****** www.elkaffeino.com *****")
 
             receipt_text = "\n".join(receipt)

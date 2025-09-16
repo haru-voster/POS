@@ -5,5 +5,5 @@ load_dotenv()
 
 SHOP_NAME = os.getenv("SHOP_NAME", "Scurite Restaurant POS")
 SHOP_MOBILE = os.getenv("SHOP_MOBILE", "0000000000")
-CURRENCY = os.getenv("CURRENCY", "₹")
+CURRENCY = os.getenv("CURRENCY", "Kshs.")
 DB_PATH = os.getenv("DB_PATH", "db/database.db")

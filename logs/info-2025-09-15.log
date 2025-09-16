@@ -1,0 +1,473 @@
+2025-09-15 14:41:49,817 - INFO - Fetched 58 items successfully.
+2025-09-15 14:41:50,456 - INFO - Fetched 2 orders successfully.
+2025-09-15 14:41:50,525 - INFO - Fetched 2 orders successfully.
+2025-09-15 14:41:56,246 - INFO - Fetched 2 orders successfully.
+2025-09-15 14:41:59,564 - INFO - Order info fetched successfully for order_id: 2
+2025-09-15 14:42:05,563 - INFO - Fetched 58 items successfully.
+2025-09-15 14:42:05,703 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:42:05,719 - INFO - Fetched 58 items successfully.
+2025-09-15 14:42:05,852 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:42:10,189 - INFO - Item ID 1 has 0 variations.
+2025-09-15 14:42:10,301 - INFO - Item 'Masala Veg Salad' with ID 1 added to cart (Qty: 1).
+2025-09-15 14:42:13,210 - INFO - Item ID 7 has 0 variations.
+2025-09-15 14:42:13,327 - INFO - Item 'Tandoori Chicken Salad' with ID 7 added to cart (Qty: 1).
+2025-09-15 14:42:18,423 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:42:23,897 - INFO - Order info fetched successfully for order_id: 2
+2025-09-15 14:42:41,610 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:42:42,826 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:42:45,508 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:42:48,975 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:42:51,539 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:42:59,903 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:43:05,295 - INFO - Order with ID 2 and its items deleted successfully.
+2025-09-15 14:43:05,312 - INFO - Fetched 2 orders successfully.
+2025-09-15 14:43:12,388 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:43:12,409 - INFO - Fetched 0 items successfully.
+2025-09-15 14:43:12,433 - INFO - Fetched 58 items successfully.
+2025-09-15 14:43:16,954 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:43:26,052 - INFO - Item ID 11 updated to 'Cheese And Paneer Roll'.
+2025-09-15 14:43:26,079 - INFO - Fetched 58 items successfully.
+2025-09-15 14:43:40,605 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:43:42,563 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:43:42,582 - INFO - Fetched 58 items successfully.
+2025-09-15 14:43:46,069 - INFO - Fetched 2 orders successfully.
+2025-09-15 14:43:47,401 - INFO - Fetched 2 orders successfully.
+2025-09-15 14:44:06,726 - INFO - Fetched 58 items successfully.
+2025-09-15 14:44:06,847 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:44:06,870 - INFO - Fetched 58 items successfully.
+2025-09-15 14:44:06,990 - INFO - Fetched 58 items successfully.
+2025-09-15 14:44:07,112 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:44:14,268 - INFO - Item ID 5 has 0 variations.
+2025-09-15 14:44:14,377 - INFO - Item 'Chicken Seekh Salad' with ID 5 added to cart (Qty: 1).
+2025-09-15 14:44:24,388 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:44:24,416 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:45:01,753 - INFO - Fetched 58 items successfully.
+2025-09-15 14:45:02,549 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:45:02,638 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:45:11,296 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:45:19,277 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:45:20,775 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:45:21,662 - INFO - Fetched 3 orders successfully.
+2025-09-15 14:45:23,566 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:45:24,642 - INFO - Fetched 58 items successfully.
+2025-09-15 14:45:24,771 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:45:24,793 - INFO - Fetched 58 items successfully.
+2025-09-15 14:45:24,915 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:45:31,020 - INFO - Item ID 3 has 0 variations.
+2025-09-15 14:45:31,141 - INFO - Item 'Chicken Roasted Salad' with ID 3 added to cart (Qty: 1).
+2025-09-15 14:45:32,660 - INFO - Item ID 17 has 0 variations.
+2025-09-15 14:45:32,778 - INFO - Item 'Vegetable Soup' with ID 17 added to cart (Qty: 1).
+2025-09-15 14:45:33,668 - INFO - Item ID 16 has 0 variations.
+2025-09-15 14:45:33,792 - INFO - Item 'Tomato Basil Soup' with ID 16 added to cart (Qty: 1).
+2025-09-15 14:45:35,394 - INFO - Item ID 19 has 0 variations.
+2025-09-15 14:45:35,506 - INFO - Item 'Minestrone Soup' with ID 19 added to cart (Qty: 1).
+2025-09-15 14:45:36,882 - INFO - Fetched 4 orders successfully.
+2025-09-15 14:45:40,997 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:45:41,022 - INFO - Fetched 0 items successfully.
+2025-09-15 14:45:41,046 - INFO - Fetched 58 items successfully.
+2025-09-15 14:45:42,312 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:45:42,338 - INFO - Fetched 58 items successfully.
+2025-09-15 14:46:14,753 - INFO - Variation 'Chicken' for item ID 22 added successfully.
+2025-09-15 14:46:22,074 - INFO - Variation ID 13 updated.
+2025-09-15 14:47:08,392 - INFO - Item 'Soup' saved successfully.
+2025-09-15 14:47:08,410 - INFO - Fetched 59 items successfully.
+2025-09-15 14:47:11,232 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:47:15,217 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:47:18,334 - INFO - Fetched 4 orders successfully.
+2025-09-15 14:47:32,568 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:47:33,756 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:47:34,839 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:47:34,864 - INFO - Fetched 59 items successfully.
+2025-09-15 14:47:48,498 - INFO - Fetched 4 orders successfully.
+2025-09-15 14:47:58,178 - INFO - Fetched 59 items successfully.
+2025-09-15 14:47:58,294 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:47:58,313 - INFO - Fetched 59 items successfully.
+2025-09-15 14:47:58,427 - INFO - Fetched 59 items successfully.
+2025-09-15 14:47:58,544 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:47:59,828 - INFO - Item ID 3 has 0 variations.
+2025-09-15 14:47:59,952 - INFO - Item 'Chicken Roasted Salad' with ID 3 added to cart (Qty: 1).
+2025-09-15 14:48:01,725 - INFO - Fetched 5 orders successfully.
+2025-09-15 14:48:01,756 - INFO - Fetched 5 orders successfully.
+2025-09-15 14:48:08,647 - INFO - Fetched 59 items successfully.
+2025-09-15 14:48:08,759 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:48:08,783 - INFO - Fetched 59 items successfully.
+2025-09-15 14:48:08,896 - INFO - Fetched 59 items successfully.
+2025-09-15 14:48:09,022 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:48:11,843 - INFO - Item ID 5 has 0 variations.
+2025-09-15 14:48:11,970 - INFO - Item 'Chicken Seekh Salad' with ID 5 added to cart (Qty: 1).
+2025-09-15 14:48:14,007 - INFO - Fetched 6 orders successfully.
+2025-09-15 14:48:14,041 - INFO - Fetched 6 orders successfully.
+2025-09-15 14:48:14,073 - INFO - Fetched 6 orders successfully.
+2025-09-15 14:48:20,138 - INFO - Fetched 59 items successfully.
+2025-09-15 14:48:20,253 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:48:20,274 - INFO - Fetched 59 items successfully.
+2025-09-15 14:48:20,387 - INFO - Fetched 59 items successfully.
+2025-09-15 14:48:20,527 - INFO - Fetched 0 tables successfully.
+2025-09-15 14:48:21,948 - INFO - Item ID 5 has 0 variations.
+2025-09-15 14:48:22,056 - INFO - Item 'Chicken Seekh Salad' with ID 5 added to cart (Qty: 1).
+2025-09-15 14:48:25,302 - INFO - Item ID 14 has 0 variations.
+2025-09-15 14:48:25,411 - INFO - Item 'Crispy Chicken Roll' with ID 14 added to cart (Qty: 1).
+2025-09-15 14:48:33,955 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:48:33,989 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:48:34,026 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:48:34,065 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:48:56,775 - INFO - Order info fetched successfully for order_id: 5
+2025-09-15 14:49:03,537 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:49:11,568 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:49:13,830 - INFO - Order info fetched successfully for order_id: 8
+2025-09-15 14:49:22,210 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:49:27,494 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:49:28,540 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:49:28,563 - INFO - Fetched 59 items successfully.
+2025-09-15 14:49:29,325 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:49:30,452 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:49:30,475 - INFO - Fetched 59 items successfully.
+2025-09-15 14:53:00,068 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:53:17,746 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:53:18,842 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:53:18,868 - INFO - Fetched 59 items successfully.
+2025-09-15 14:54:28,771 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:54:29,540 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:54:29,567 - INFO - Fetched 59 items successfully.
+2025-09-15 14:54:31,071 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:54:38,007 - INFO - Fetched 14 categories successfully.
+2025-09-15 14:55:27,489 - INFO - Fetched 7 orders successfully.
+2025-09-15 14:55:30,301 - INFO - Fetched 7 orders successfully.
+2025-09-15 16:56:07,030 - INFO - Fetched 59 items successfully.
+2025-09-15 16:56:07,377 - INFO - Fetched 7 orders successfully.
+2025-09-15 16:56:07,479 - INFO - Fetched 7 orders successfully.
+2025-09-15 16:56:13,971 - INFO - Fetched 59 items successfully.
+2025-09-15 16:56:14,360 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:56:14,369 - INFO - Fetched 59 items successfully.
+2025-09-15 16:56:14,696 - INFO - Fetched 0 tables successfully.
+2025-09-15 16:56:16,363 - INFO - Item ID 4 has 0 variations.
+2025-09-15 16:56:17,087 - INFO - Item 'Chicken Falafel Salad' with ID 4 added to cart (Qty: 1).
+2025-09-15 16:56:19,636 - INFO - Item ID 11 has 0 variations.
+2025-09-15 16:56:19,649 - INFO - Item 'Cheese And Paneer Roll' with ID 11 added to cart (Qty: 1).
+2025-09-15 16:56:21,035 - INFO - Item ID 11 has 0 variations.
+2025-09-15 16:56:21,083 - INFO - Item 'Cheese And Paneer Roll' with ID 11 added to cart (Qty: 1).
+2025-09-15 16:56:34,931 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:56:44,335 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:56:46,391 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:56:46,398 - INFO - Fetched 0 items successfully.
+2025-09-15 16:56:46,400 - INFO - Fetched 59 items successfully.
+2025-09-15 16:56:50,267 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:56:55,473 - INFO - Fetched 0 tables successfully.
+2025-09-15 16:56:57,692 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:00,261 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:02,125 - INFO - Category ID 1 updated to 'Starter' successfully.
+2025-09-15 16:57:02,136 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:08,370 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:15,105 - INFO - Category ID 1 updated to 'Tea' successfully.
+2025-09-15 16:57:15,115 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:26,078 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:57:28,001 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:57:30,623 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:31,760 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:37,981 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:57:40,014 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:57:41,048 - INFO - Fetched 59 items successfully.
+2025-09-15 16:57:41,249 - INFO - Fetched 14 categories successfully.
+2025-09-15 16:57:41,251 - INFO - Fetched 59 items successfully.
+2025-09-15 16:57:41,428 - INFO - Fetched 59 items successfully.
+2025-09-15 16:57:41,615 - INFO - Fetched 0 tables successfully.
+2025-09-15 16:57:55,059 - INFO - Item ID 27 has 0 variations.
+2025-09-15 16:57:55,069 - INFO - Item 'Banana Frappe' with ID 27 added to cart (Qty: 1).
+2025-09-15 16:58:06,121 - INFO - Item ID 27 has 0 variations.
+2025-09-15 16:58:06,128 - INFO - Item 'Banana Frappe' with ID 27 added to cart (Qty: 1).
+2025-09-15 16:58:32,882 - INFO - Fetched 8 orders successfully.
+2025-09-15 16:58:32,933 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:09:53,472 - INFO - Fetched 59 items successfully.
+2025-09-15 17:09:53,772 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:09:53,849 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:09:57,615 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:09:57,618 - INFO - Fetched 0 items successfully.
+2025-09-15 17:09:57,622 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:09:57,658 - INFO - Fetched 59 items successfully.
+2025-09-15 17:10:17,214 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:10:26,580 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:10:26,583 - INFO - Fetched 0 items successfully.
+2025-09-15 17:10:26,586 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:10:26,616 - INFO - Fetched 59 items successfully.
+2025-09-15 17:10:30,161 - INFO - Item ID 1 has 0 variations.
+2025-09-15 17:10:30,171 - INFO - Item 'Masala Veg Salad' added to order 9.
+2025-09-15 17:16:50,714 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:20:38,309 - INFO - Fetched 59 items successfully.
+2025-09-15 17:20:38,738 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:20:39,013 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:20:43,031 - INFO - Fetched 59 items successfully.
+2025-09-15 17:21:28,573 - INFO - Fetched 59 items successfully.
+2025-09-15 17:21:28,884 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:21:28,947 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:21:31,122 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:21:32,819 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:21:32,827 - INFO - Fetched 0 items successfully.
+2025-09-15 17:21:32,831 - INFO - Fetched 59 items successfully.
+2025-09-15 17:21:39,305 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:24:00,173 - INFO - Fetched 59 items successfully.
+2025-09-15 17:25:33,043 - INFO - Fetched 59 items successfully.
+2025-09-15 17:25:33,350 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:25:33,413 - INFO - Fetched 8 orders successfully.
+2025-09-15 17:25:35,086 - INFO - Fetched 59 items successfully.
+2025-09-15 17:25:35,459 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:25:35,462 - INFO - Fetched 59 items successfully.
+2025-09-15 17:25:35,750 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:25:39,791 - INFO - Item ID 1 has 0 variations.
+2025-09-15 17:25:39,800 - INFO - Item 'Masala Veg Salad' with ID 1 added to cart (Qty: 1).
+2025-09-15 17:25:41,411 - INFO - Item ID 2 has 0 variations.
+2025-09-15 17:25:41,421 - INFO - Item 'Vegetarian Salad' with ID 2 added to cart (Qty: 1).
+2025-09-15 17:25:42,998 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:26:32,330 - INFO - Fetched 59 items successfully.
+2025-09-15 17:26:32,647 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:26:32,649 - INFO - Fetched 59 items successfully.
+2025-09-15 17:26:32,928 - INFO - Fetched 59 items successfully.
+2025-09-15 17:26:33,227 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:45:26,998 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:27,160 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:33,803 - INFO - Fetched 59 items successfully.
+2025-09-15 17:45:34,203 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:45:34,207 - INFO - Fetched 59 items successfully.
+2025-09-15 17:45:34,481 - INFO - Fetched 59 items successfully.
+2025-09-15 17:45:34,752 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:45:36,480 - INFO - Item ID 2 has 0 variations.
+2025-09-15 17:45:36,487 - INFO - Item 'Vegetarian Salad' with ID 2 added to cart (Qty: 1).
+2025-09-15 17:45:38,805 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:38,856 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:38,904 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:46,827 - INFO - Fetched 59 items successfully.
+2025-09-15 17:45:47,178 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:47,254 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:45:48,718 - INFO - Fetched 59 items successfully.
+2025-09-15 17:45:49,015 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:45:49,017 - INFO - Fetched 59 items successfully.
+2025-09-15 17:45:49,228 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:46:55,552 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:46:59,389 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:47:01,373 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:47:05,512 - INFO - Fetched 59 items successfully.
+2025-09-15 17:47:05,757 - INFO - Fetched 14 categories successfully.
+2025-09-15 17:47:05,758 - INFO - Fetched 59 items successfully.
+2025-09-15 17:47:05,969 - INFO - Fetched 59 items successfully.
+2025-09-15 17:47:06,175 - INFO - Fetched 0 tables successfully.
+2025-09-15 17:56:49,231 - INFO - Fetched 9 orders successfully.
+2025-09-15 17:56:49,405 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:06:09,269 - INFO - Fetched 59 items successfully.
+2025-09-15 18:06:09,619 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:06:09,691 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:06:11,802 - INFO - Fetched 59 items successfully.
+2025-09-15 18:06:12,094 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:06:12,096 - INFO - Fetched 59 items successfully.
+2025-09-15 18:06:12,306 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:06:15,040 - INFO - Item ID 1 has 0 variations.
+2025-09-15 18:06:15,051 - INFO - Item 'Masala Veg Salad' with ID 1 added to cart (Qty: 1).
+2025-09-15 18:10:15,310 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:10:22,047 - INFO - Fetched 59 items successfully.
+2025-09-15 18:10:22,374 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:10:22,443 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:10:24,887 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:19,328 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:19,642 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:11:19,717 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:11:21,379 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:21,677 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:11:21,679 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:21,921 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:11:51,720 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:11:53,539 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:53,793 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:11:53,794 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:54,017 - INFO - Fetched 59 items successfully.
+2025-09-15 18:11:54,240 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:12:19,126 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:12:19,171 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:12:23,396 - INFO - Fetched 59 items successfully.
+2025-09-15 18:12:23,743 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:12:23,819 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:12:24,904 - INFO - Fetched 59 items successfully.
+2025-09-15 18:12:25,185 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:12:25,187 - INFO - Fetched 59 items successfully.
+2025-09-15 18:12:25,408 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:14:31,560 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:14:33,869 - INFO - Fetched 59 items successfully.
+2025-09-15 18:14:34,124 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:14:34,126 - INFO - Fetched 59 items successfully.
+2025-09-15 18:14:34,358 - INFO - Fetched 59 items successfully.
+2025-09-15 18:14:34,582 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:14:36,701 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:14:36,752 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:14:44,175 - INFO - Fetched 59 items successfully.
+2025-09-15 18:14:44,507 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:14:44,581 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:14:45,919 - INFO - Fetched 59 items successfully.
+2025-09-15 18:14:46,195 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:14:46,196 - INFO - Fetched 59 items successfully.
+2025-09-15 18:14:46,437 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:15:56,353 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:16:01,699 - INFO - Fetched 59 items successfully.
+2025-09-15 18:16:02,048 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:16:02,115 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:16:03,422 - INFO - Fetched 59 items successfully.
+2025-09-15 18:16:03,693 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:16:03,695 - INFO - Fetched 59 items successfully.
+2025-09-15 18:16:03,918 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:17:44,743 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:17:49,332 - INFO - Fetched 59 items successfully.
+2025-09-15 18:17:49,593 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:17:49,595 - INFO - Fetched 59 items successfully.
+2025-09-15 18:17:49,811 - INFO - Fetched 59 items successfully.
+2025-09-15 18:17:50,031 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:17:55,837 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:17:55,886 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:18:12,008 - INFO - Fetched 59 items successfully.
+2025-09-15 18:18:12,364 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:18:12,441 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:18:14,198 - INFO - Fetched 59 items successfully.
+2025-09-15 18:18:14,545 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:18:14,547 - INFO - Fetched 59 items successfully.
+2025-09-15 18:18:14,778 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:22:42,394 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:38:38,992 - INFO - Fetched 59 items successfully.
+2025-09-15 18:38:39,359 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:38:39,449 - INFO - Fetched 9 orders successfully.
+2025-09-15 18:38:40,787 - INFO - Fetched 59 items successfully.
+2025-09-15 18:38:41,111 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:38:41,117 - INFO - Fetched 59 items successfully.
+2025-09-15 18:38:41,356 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:38:44,884 - INFO - Item ID 11 has 0 variations.
+2025-09-15 18:38:44,895 - INFO - Item 'Cheese And Paneer Roll' with ID 11 added to cart (Qty: 1).
+2025-09-15 18:38:45,770 - INFO - Item ID 11 has 0 variations.
+2025-09-15 18:38:45,781 - INFO - Item 'Cheese And Paneer Roll' with ID 11 added to cart (Qty: 1).
+2025-09-15 18:38:50,969 - INFO - Fetched 10 orders successfully.
+2025-09-15 18:40:30,557 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:40:32,450 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:40:39,541 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:40:39,549 - INFO - Fetched 0 items successfully.
+2025-09-15 18:40:39,551 - INFO - Fetched 59 items successfully.
+2025-09-15 18:40:46,038 - INFO - Fetched 10 orders successfully.
+2025-09-15 18:40:47,395 - INFO - Fetched 10 orders successfully.
+2025-09-15 18:40:49,501 - INFO - Fetched 10 orders successfully.
+2025-09-15 18:40:50,093 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:40:50,097 - INFO - Fetched 59 items successfully.
+2025-09-15 18:40:57,956 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:41:05,652 - INFO - Item ID 2 updated to 'Vegetarian Salad'.
+2025-09-15 18:41:05,668 - INFO - Fetched 59 items successfully.
+2025-09-15 18:41:12,963 - INFO - Fetched 59 items successfully.
+2025-09-15 18:41:13,236 - INFO - Fetched 14 categories successfully.
+2025-09-15 18:41:13,238 - INFO - Fetched 59 items successfully.
+2025-09-15 18:41:13,464 - INFO - Fetched 59 items successfully.
+2025-09-15 18:41:13,690 - INFO - Fetched 0 tables successfully.
+2025-09-15 18:42:04,028 - INFO - Fetched 10 orders successfully.
+2025-09-15 18:42:04,080 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:23:36,808 - INFO - Fetched 59 items successfully.
+2025-09-15 20:23:37,129 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:23:37,211 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:23:48,936 - INFO - Fetched 59 items successfully.
+2025-09-15 20:23:49,268 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:23:49,270 - INFO - Fetched 59 items successfully.
+2025-09-15 20:23:49,497 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:23:51,188 - INFO - Item ID 2 has 0 variations.
+2025-09-15 20:23:51,199 - INFO - Item 'Vegetarian Salad' with ID 2 added to cart (Qty: 1).
+2025-09-15 20:23:52,083 - INFO - Item ID 1 has 0 variations.
+2025-09-15 20:23:52,094 - INFO - Item 'Masala Veg Salad' with ID 1 added to cart (Qty: 1).
+2025-09-15 20:23:53,383 - INFO - Item ID 8 has 0 variations.
+2025-09-15 20:23:53,390 - INFO - Item 'El Kaffeino Special Salad' with ID 8 added to cart (Qty: 1).
+2025-09-15 20:23:55,593 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:24:02,696 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:24:02,698 - INFO - Fetched 0 items successfully.
+2025-09-15 20:24:02,701 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:24:02,735 - INFO - Fetched 59 items successfully.
+2025-09-15 20:24:55,641 - INFO - Order with ID 12 updated successfully.
+2025-09-15 20:24:57,593 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:25:01,956 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:25:16,399 - INFO - Order info fetched successfully for order_id: 12
+2025-09-15 20:25:40,040 - INFO - Order info fetched successfully for order_id: 12
+2025-09-15 20:28:23,017 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:28:25,075 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:28:56,844 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:29:04,225 - INFO - Fetched 59 items successfully.
+2025-09-15 20:29:04,566 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:29:04,571 - INFO - Fetched 59 items successfully.
+2025-09-15 20:29:04,822 - INFO - Fetched 59 items successfully.
+2025-09-15 20:29:05,082 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:36:58,016 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:36:58,172 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:37:03,025 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:37:04,225 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:37:05,408 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:37:05,418 - INFO - Fetched 0 items successfully.
+2025-09-15 20:37:05,423 - INFO - Fetched 59 items successfully.
+2025-09-15 20:37:06,401 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:37:07,611 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:37:08,551 - INFO - Fetched 59 items successfully.
+2025-09-15 20:37:08,911 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:37:08,912 - INFO - Fetched 59 items successfully.
+2025-09-15 20:37:09,163 - INFO - Fetched 59 items successfully.
+2025-09-15 20:37:09,422 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:37:13,380 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:37:13,435 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:37:13,493 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:37:14,850 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:37:21,588 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:37:41,814 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:37:49,493 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:37:50,677 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:37:51,587 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:37:51,591 - INFO - Fetched 59 items successfully.
+2025-09-15 20:37:52,759 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:37:54,509 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:38:01,044 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:38:01,046 - INFO - Fetched 0 items successfully.
+2025-09-15 20:38:01,050 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:38:01,084 - INFO - Fetched 59 items successfully.
+2025-09-15 20:38:13,019 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:38:18,372 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:38:18,375 - INFO - Fetched 0 items successfully.
+2025-09-15 20:38:18,378 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:38:18,402 - INFO - Fetched 59 items successfully.
+2025-09-15 20:38:26,831 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:38:28,367 - INFO - Fetched 59 items successfully.
+2025-09-15 20:38:28,721 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:38:28,722 - INFO - Fetched 59 items successfully.
+2025-09-15 20:38:28,994 - INFO - Fetched 59 items successfully.
+2025-09-15 20:38:29,276 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:38:31,316 - INFO - Item ID 1 has 0 variations.
+2025-09-15 20:38:31,324 - INFO - Item 'Masala Veg Salad' with ID 1 added to cart (Qty: 1).
+2025-09-15 20:38:33,173 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:38:33,246 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:38:33,320 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:38:33,388 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:38:39,629 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:38:39,633 - INFO - Fetched 0 items successfully.
+2025-09-15 20:38:39,637 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:38:39,660 - INFO - Fetched 59 items successfully.
+2025-09-15 20:39:09,313 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:39:11,153 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:39:11,353 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:39:14,784 - INFO - Fetched 12 orders successfully.
+2025-09-15 20:40:13,747 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:40:14,956 - INFO - Fetched 59 items successfully.
+2025-09-15 20:40:15,292 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:40:15,294 - INFO - Fetched 59 items successfully.
+2025-09-15 20:40:15,579 - INFO - Fetched 59 items successfully.
+2025-09-15 20:40:15,870 - INFO - Fetched 0 tables successfully.
+2025-09-15 20:40:18,456 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:18,533 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:18,606 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:18,678 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:18,741 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:20,039 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:21,149 - INFO - Fetched 12 orders successfully.
+2025-09-15 20:40:27,665 - INFO - Order with ID 1 and its items deleted successfully.
+2025-09-15 20:40:27,668 - INFO - Fetched 11 orders successfully.
+2025-09-15 20:40:34,475 - INFO - Order with ID 9 and its items deleted successfully.
+2025-09-15 20:40:34,480 - INFO - Fetched 10 orders successfully.
+2025-09-15 20:40:43,804 - INFO - Order with ID 11 and its items deleted successfully.
+2025-09-15 20:40:43,807 - INFO - Fetched 9 orders successfully.
+2025-09-15 20:40:51,123 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:41:04,867 - INFO - Fetched 9 orders successfully.
+2025-09-15 20:41:13,372 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:41:13,375 - INFO - Fetched 59 items successfully.
+2025-09-15 20:41:37,928 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:41:38,955 - INFO - Fetched 14 categories successfully.
+2025-09-15 20:41:38,961 - INFO - Fetched 59 items successfully.
+2025-09-15 20:41:50,704 - INFO - Fetched 9 orders successfully.

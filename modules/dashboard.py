@@ -12,7 +12,8 @@ from modules.tables import Tables
 class Dashboard(QMainWindow):
     def __init__(self):
         super(Dashboard, self).__init__()
-        uic.loadUi('ui/dashboard.ui', self)
+     
+     
         self.showMaximized()
         # Initialize Category class instance
         self.category_manager = Category()

@@ -3,7 +3,7 @@
 <br>
 
 <img src="screenshot/ez2.gif" width="100%"/>
-
+<hr> https://drive.google.com/uc?id=1AmUOUw8Bi9wbRmaMoDNSbxQsVM1a6VCO&export=download</hr>
 RestroCalc Python Qt Restaurant Billing Software built with Python and Qt, designed to streamline restaurant operations. This application provides a complete suite of features, including Category Management, Item Management, Orders, Tables, and Reports.
 
 ## Key Features
@@ -14,4 +14,5 @@ RestroCalc Python Qt Restaurant Billing Software built with Python and Qt, desig
 - **Table Management**: Organize table seating and status to streamline reservations and service.
 - **Reports**: Generate comprehensive reports on sales, order history, and more for insightful analysis.
 # <h1 align= "center">Restaurant POS </h1>
+
 \users\haroun\AppData\Roaming\Python\Python313\Scripts\pyinstaller.exe --onefile --windowed --clean --add-data "ui;ui" --add-data "images;images" --add-data "db/database.db;db"  --add-data "db/database_.db;db" --add-data "icon;icon" --icon "icon\icon.ico" main.py   

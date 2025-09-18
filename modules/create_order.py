@@ -75,12 +75,15 @@ class CreateOrder:
 
         # 🔹 List of fallback images
         fallback_images = [
+            "images/bananas.png",
             "images/default.jpeg",
             "images/vegetarian.jpeg",
+            "images/specialchipo.jfif",
+            "images/normalchipo.jfif",
+            "images/creeps.jfif",
+            "images/chickenm.jfif",
             "images/fallback3.jpeg",
-            "images/fallback4.jpeg",
-            "images/default.jpeg",
-            "images/fallback3.jpeg",
+            
         ]
 
         for index, row in enumerate(items):

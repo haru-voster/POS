@@ -149,3 +149,26 @@
 2025-09-18 14:39:57,287 - INFO - Fetched 6 orders successfully.
 2025-09-18 14:39:57,314 - INFO - Fetched 6 orders successfully.
 2025-09-18 14:39:57,343 - INFO - Fetched 6 orders successfully.
+2025-09-18 19:15:50,607 - INFO - Fetched 59 items successfully.
+2025-09-18 19:15:50,934 - INFO - Fetched 9 orders successfully.
+2025-09-18 19:15:51,017 - INFO - Fetched 6 orders successfully.
+2025-09-18 19:15:52,604 - INFO - Fetched 59 items successfully.
+2025-09-18 19:15:53,433 - INFO - Fetched 14 categories successfully.
+2025-09-18 19:15:53,435 - INFO - Fetched 59 items successfully.
+2025-09-18 19:15:54,050 - INFO - Fetched 0 tables successfully.
+2025-09-18 19:16:08,171 - INFO - Item ID 7 has 0 variations.
+2025-09-18 19:16:08,182 - INFO - Item 'Chicken Masala' with ID 7 added to cart (Qty: 1).
+2025-09-18 19:16:10,441 - INFO - Item ID 2 has 0 variations.
+2025-09-18 19:16:10,452 - INFO - Item 'Pizza' with ID 2 added to cart (Qty: 1).
+2025-09-18 19:16:17,743 - INFO - Fetched 7 orders successfully.
+2025-09-18 19:16:23,391 - INFO - Fetched 14 categories successfully.
+2025-09-18 19:16:23,394 - INFO - Fetched 0 items successfully.
+2025-09-18 19:16:23,398 - INFO - Fetched 0 tables successfully.
+2025-09-18 19:16:23,422 - INFO - Fetched 59 items successfully.
+2025-09-18 19:16:40,620 - INFO - Order with ID 15 updated successfully.
+2025-09-18 19:16:42,165 - INFO - Fetched 6 orders successfully.
+2025-09-18 19:16:49,277 - INFO - Fetched 14 categories successfully.
+2025-09-18 19:16:49,280 - INFO - Fetched 0 items successfully.
+2025-09-18 19:16:49,282 - INFO - Fetched 59 items successfully.
+2025-09-18 19:16:51,249 - INFO - Fetched 10 orders successfully.
+2025-09-18 19:16:55,643 - INFO - Order info fetched successfully for order_id: 15

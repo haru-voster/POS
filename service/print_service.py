@@ -25,7 +25,7 @@ class PrintService:
             order_id, shop_table, name, mobile, address, amount, discount, status, created_at = order
 
             receipt = []
-            receipt.append("******** El Kaffeino ********")
+            receipt.append("******** MAMA LIAM FRIES ********")
             receipt.append("--------- RECEIPT -----------")
             receipt.append(f"Order No: {order_id}")
             receipt.append(f"Table/Delivery: {shop_table}")
@@ -40,7 +40,7 @@ class PrintService:
 
             receipt.append("-" * 30)
             receipt.append(f"Total: Kshs.{total:.2f}")
-            receipt.append("****** www.elkaffeino.com *****")
+            receipt.append("****** Hot, Fast and Friendly *****")
 
             receipt_text = "\n".join(receipt)
             PrintService.print_receipt(receipt_text)

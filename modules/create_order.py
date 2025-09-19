@@ -75,14 +75,22 @@ class CreateOrder:
 
         # 🔹 List of fallback images
         fallback_images = [
-            "images/bananas.png",
             "images/default.jpeg",
             "images/vegetarian.jpeg",
             "images/specialchipo.jfif",
             "images/normalchipo.jfif",
             "images/creeps.jfif",
             "images/chickenm.jfif",
-            "images/fallback3.jpeg",
+            "images/beefstew.jfif",
+            "images/fish2.jfif",
+            "images/fish.jfif",
+            "images/roasted.jfif",
+            "images/chickenroasted.jfif",
+            "images/pilau.jfif",       
+            "images/bananas.png",
+            
+
+        
             
         ]
 

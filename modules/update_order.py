@@ -159,7 +159,7 @@ class UpdateOrder:
             item_widget = QWidget()
             item_layout = QHBoxLayout()  # Using a horizontal layout
 
-            item_price = item_price.replace(",", "")  # Remove commas in case of formatted numbers
+            item_price = item_price.replace(",", "")  
 
             try:
                 item_price = float(item_price)

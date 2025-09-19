@@ -27,7 +27,7 @@ class DBService:
                                   (SELECT COUNT(*) FROM orders_items WHERE orders_items.order_id = o.order_id) AS item_count 
                            FROM orders o
                            ORDER BY o.order_id DESC"""
-            params = ()  # No parameters needed for all orders query
+            params = () # No parameters needed for all orders query
 
         try:
             with DBService.get_connection() as conn:

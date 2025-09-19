@@ -75,7 +75,7 @@ class CreateOrder:
 
         # 🔹 List of fallback images
         fallback_images = [
-            "images/chipregular.jpg",
+            "images/chipregular.jpeg",
             "images/chipmasala.jpeg",
             "images/qchicken.jpeg",
              "images/halfchicken.jpeg",

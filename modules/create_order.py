@@ -75,14 +75,25 @@ class CreateOrder:
 
         # 🔹 List of fallback images
         fallback_images = [
-            "images/bananas.png",
-            "images/default.jpeg",
-            "images/vegetarian.jpeg",
-            "images/specialchipo.jfif",
-            "images/normalchipo.jfif",
-            "images/creeps.jfif",
-            "images/chickenm.jfif",
-            "images/fallback3.jpeg",
+            "images/chipregular.jpg",
+            "images/chipmasala.jpeg",
+            "images/qchicken.jpeg",
+             "images/halfchicken.jpeg",
+              "images/chickenfull.jpg",
+               "images/bhajia.jpeg",
+                "images/samosa.jpeg",
+                 "images/sausage.jpeg",
+                  "images/kebab.jpg",
+                   "images/tomato.jpeg",
+                    "images/s0da300.jpeg",
+                     "images/soda500.jpeg",
+                      "images/plastic.jpeg",
+                       "images/dasani.jpeg",
+                        "images/water.jpeg",
+                         "images/passion.jpeg",
+                          "images/mango.jpeg",
+                           "images/pineaple.jpeg",
+                            "images/afya.jpeg",
             
         ]
 

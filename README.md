@@ -17,4 +17,7 @@ Restaurant POS Python Qt Restaurant Billing Software built with Python and Qt, d
 # <h1 align= "center">Restaurant POS </h1>
 
 \users\haroun\AppData\Roaming\Python\Python313\Scripts\pyinstaller.exe --onefile --windowed --clean --add-data "ui;ui" --add-data "images;images" --add-data "db/database.db;db"  --add-data "db/database_.db;db" --add-data "icon;icon" --icon "icon\icon.ico" main.py   
+# setup
+python -m PyInstaller --onefile --windowed --clean --add-data "ui;ui" --add-data "images;images" --add-data "db/database.db;db" --add-data "db/database_.db;db" --add-data "icon;icon" --icon "icon\icon.ico" main.py
+
  # image addition

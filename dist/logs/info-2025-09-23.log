@@ -1,0 +1,82 @@
+2025-09-23 15:09:40,172 - INFO - Fetched 59 items successfully.
+2025-09-23 15:09:40,759 - INFO - Fetched 14 orders successfully.
+2025-09-23 15:09:40,890 - INFO - Fetched 10 orders successfully.
+2025-09-23 15:09:42,861 - INFO - Fetched 59 items successfully.
+2025-09-23 15:09:43,332 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:09:43,345 - INFO - Fetched 59 items successfully.
+2025-09-23 15:09:43,684 - INFO - Fetched 2 tables successfully.
+2025-09-23 15:09:53,205 - INFO - Fetched 10 orders successfully.
+2025-09-23 15:09:56,215 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:09:56,339 - INFO - Fetched 0 items successfully.
+2025-09-23 15:09:56,353 - INFO - Fetched 59 items successfully.
+2025-09-23 15:12:24,384 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:12:49,426 - INFO - Item ID 4 updated to 'Chicken Half (1/2)'.
+2025-09-23 15:12:49,442 - INFO - Fetched 59 items successfully.
+2025-09-23 15:12:51,767 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:13:15,721 - INFO - Item ID 5 updated to 'Chicken Full '.
+2025-09-23 15:13:15,741 - INFO - Fetched 59 items successfully.
+2025-09-23 15:13:24,409 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:13:24,426 - INFO - Fetched 59 items successfully.
+2025-09-23 15:13:34,824 - INFO - Fetched 14 orders successfully.
+2025-09-23 15:13:36,071 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:13:36,089 - INFO - Fetched 59 items successfully.
+2025-09-23 15:13:38,771 - INFO - Fetched 59 items successfully.
+2025-09-23 15:13:39,297 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:13:39,309 - INFO - Fetched 59 items successfully.
+2025-09-23 15:13:39,651 - INFO - Fetched 59 items successfully.
+2025-09-23 15:13:40,005 - INFO - Fetched 2 tables successfully.
+2025-09-23 15:14:07,386 - INFO - Fetched 10 orders successfully.
+2025-09-23 15:14:07,422 - INFO - Fetched 10 orders successfully.
+2025-09-23 15:14:09,969 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:15:47,784 - INFO - Item ID 6 updated to 'Bhajia'.
+2025-09-23 15:15:47,801 - INFO - Fetched 59 items successfully.
+2025-09-23 15:15:51,410 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:16:07,043 - INFO - Item ID 7 updated to 'Samosa'.
+2025-09-23 15:16:07,061 - INFO - Fetched 59 items successfully.
+2025-09-23 15:16:10,091 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:16:27,722 - INFO - Item ID 8 updated to 'Sausage'.
+2025-09-23 15:16:27,753 - INFO - Fetched 59 items successfully.
+2025-09-23 15:16:29,565 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:16:42,556 - INFO - Item ID 9 updated to 'Kebab'.
+2025-09-23 15:16:42,581 - INFO - Fetched 59 items successfully.
+2025-09-23 15:16:45,766 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:17:00,824 - INFO - Item ID 10 updated to 'Tomato Sauce'.
+2025-09-23 15:17:00,842 - INFO - Fetched 59 items successfully.
+2025-09-23 15:17:02,689 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:17:29,289 - INFO - Item ID 11 updated to 'Soda 300Ml'.
+2025-09-23 15:17:29,309 - INFO - Fetched 59 items successfully.
+2025-09-23 15:17:31,365 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:17:45,550 - INFO - Item ID 12 updated to 'Soda 500Ml'.
+2025-09-23 15:17:45,568 - INFO - Fetched 59 items successfully.
+2025-09-23 15:17:47,955 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:18:05,216 - INFO - Item ID 13 updated to 'Soda Plastic'.
+2025-09-23 15:18:05,233 - INFO - Fetched 59 items successfully.
+2025-09-23 15:18:07,947 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:18:21,763 - INFO - Item ID 14 updated to 'Dasani 500'.
+2025-09-23 15:18:21,781 - INFO - Fetched 59 items successfully.
+2025-09-23 15:18:30,365 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:18:45,496 - INFO - Item ID 15 updated to 'Water'.
+2025-09-23 15:18:45,515 - INFO - Fetched 59 items successfully.
+2025-09-23 15:18:46,983 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:19:08,762 - INFO - Item ID 16 updated to 'Passion Juice'.
+2025-09-23 15:19:08,780 - INFO - Fetched 59 items successfully.
+2025-09-23 15:19:10,733 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:19:25,193 - INFO - Item ID 17 updated to 'Mango Juice'.
+2025-09-23 15:19:25,211 - INFO - Fetched 59 items successfully.
+2025-09-23 15:19:28,149 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:19:49,498 - INFO - Item ID 18 updated to 'Pineapple Juice'.
+2025-09-23 15:19:49,518 - INFO - Fetched 59 items successfully.
+2025-09-23 15:19:55,346 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:20:15,795 - INFO - Item ID 19 updated to 'Afya'.
+2025-09-23 15:20:15,821 - INFO - Fetched 59 items successfully.
+2025-09-23 15:20:18,742 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:20:55,628 - INFO - Item ID 20 updated to 'Bananas(Each)'.
+2025-09-23 15:20:55,647 - INFO - Fetched 59 items successfully.
+2025-09-23 15:20:59,602 - INFO - Fetched 59 items successfully.
+2025-09-23 15:21:00,056 - INFO - Fetched 14 categories successfully.
+2025-09-23 15:21:00,076 - INFO - Fetched 59 items successfully.
+2025-09-23 15:21:00,420 - INFO - Fetched 59 items successfully.
+2025-09-23 15:21:00,812 - INFO - Fetched 2 tables successfully.
+2025-09-23 15:21:18,694 - INFO - Fetched 10 orders successfully.
+2025-09-23 15:21:18,729 - INFO - Fetched 10 orders successfully.
+2025-09-23 15:21:18,766 - INFO - Fetched 10 orders successfully.

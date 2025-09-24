@@ -18,6 +18,15 @@ Restaurant POS Python Qt Restaurant Billing Software built with Python and Qt, d
 
 \users\haroun\AppData\Roaming\Python\Python313\Scripts\pyinstaller.exe --onefile --windowed --clean --add-data "ui;ui" --add-data "images;images" --add-data "db/database.db;db"  --add-data "db/database_.db;db" --add-data "icon;icon" --icon "icon\icon.ico" main.py   
 # setup
+**install python latest version** 3.12
+**clone on your local machine**
+**install pyQt5** - gui
+**install pyinstaller** - for offline .exe file
+**after installation** - ru the command bellow 
+
 python -m PyInstaller --onefile --windowed --clean --add-data "ui;ui" --add-data "images;images" --add-data "db/database.db;db" --add-data "db/database_.db;db" --add-data "icon;icon" --icon "icon\icon.ico" main.py
 
  # image addition
+## requirements
+- **PC/LAPTOP** - Atleast 4gb/128gb windows 10 64-bit processor
+****

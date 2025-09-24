@@ -155,3 +155,16 @@
 2025-09-22 16:10:09,988 - INFO - Fetched 14 categories successfully.
 2025-09-22 16:10:10,003 - INFO - Fetched 0 items successfully.
 2025-09-22 16:10:10,019 - INFO - Fetched 2 tables successfully.
+2025-09-22 16:27:19,393 - INFO - Fetched 59 items successfully.
+2025-09-22 16:27:20,059 - INFO - Fetched 14 orders successfully.
+2025-09-22 16:27:20,237 - INFO - Fetched 10 orders successfully.
+2025-09-22 16:27:22,818 - INFO - Fetched 14 categories successfully.
+2025-09-22 16:27:22,835 - INFO - Fetched 0 items successfully.
+2025-09-22 16:27:22,851 - INFO - Fetched 2 tables successfully.
+2025-09-22 16:27:22,894 - INFO - Fetched 59 items successfully.
+2025-09-22 16:27:29,342 - INFO - Item ID 5 has 0 variations.
+2025-09-22 16:27:29,437 - INFO - Item 'Chicken Seekh Salad' added to order 19.
+2025-09-22 16:27:30,540 - INFO - Item ID 10 has 0 variations.
+2025-09-22 16:27:30,628 - INFO - Item 'Paneer Roll' added to order 19.
+2025-09-22 16:27:33,184 - INFO - Order info fetched successfully for order_id: 19
+2025-09-22 16:47:16,822 - INFO - Fetched 10 orders successfully.

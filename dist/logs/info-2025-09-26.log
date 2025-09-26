@@ -73,3 +73,139 @@
 2025-09-26 12:32:34,578 - INFO - Fetched 5 orders successfully.
 2025-09-26 12:32:37,568 - INFO - Fetched 5 orders successfully.
 2025-09-26 12:32:38,885 - INFO - Fetched 5 orders successfully.
+2025-09-26 12:36:39,438 - INFO - Fetched 59 items successfully.
+2025-09-26 12:36:40,091 - INFO - Fetched 5 orders successfully.
+2025-09-26 12:36:40,173 - INFO - Fetched 5 orders successfully.
+2025-09-26 12:36:43,374 - INFO - Fetched 5 orders successfully.
+2025-09-26 12:36:44,732 - INFO - Fetched 59 items successfully.
+2025-09-26 12:36:45,211 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:36:45,226 - INFO - Fetched 59 items successfully.
+2025-09-26 12:36:45,554 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:36:46,715 - INFO - Item ID 3 has 0 variations.
+2025-09-26 12:36:46,810 - INFO - Item 'Chicken Quarter 1/4' with ID 3 added to cart (Qty: 1).
+2025-09-26 12:36:49,052 - INFO - Fetched 6 orders successfully.
+2025-09-26 12:36:56,493 - INFO - Fetched 6 orders successfully.
+2025-09-26 12:36:59,613 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:36:59,633 - INFO - Fetched 0 items successfully.
+2025-09-26 12:36:59,649 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:00,432 - INFO - Fetched 6 orders successfully.
+2025-09-26 12:37:02,792 - INFO - Order info fetched successfully for order_id: 25
+2025-09-26 12:37:08,546 - INFO - Order with ID 25 and its items deleted successfully.
+2025-09-26 12:37:08,555 - INFO - Fetched 5 orders successfully.
+2025-09-26 12:37:10,694 - INFO - Order with ID 23 and its items deleted successfully.
+2025-09-26 12:37:10,705 - INFO - Fetched 4 orders successfully.
+2025-09-26 12:37:12,855 - INFO - Order with ID 24 and its items deleted successfully.
+2025-09-26 12:37:12,864 - INFO - Fetched 3 orders successfully.
+2025-09-26 12:37:15,056 - INFO - Order with ID 22 and its items deleted successfully.
+2025-09-26 12:37:15,065 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:37:17,569 - INFO - Order with ID 21 and its items deleted successfully.
+2025-09-26 12:37:17,579 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:37:21,865 - INFO - Order with ID 0 and its items deleted successfully.
+2025-09-26 12:37:21,876 - INFO - Fetched 0 orders successfully.
+2025-09-26 12:37:24,023 - INFO - Fetched 0 orders successfully.
+2025-09-26 12:37:25,671 - INFO - Fetched 0 orders successfully.
+2025-09-26 12:37:37,130 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:37,660 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:37:37,674 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:38,183 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:38,727 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:37:39,737 - INFO - Item ID 2 has 0 variations.
+2025-09-26 12:37:39,835 - INFO - Item 'Chips Masala' with ID 2 added to cart (Qty: 1).
+2025-09-26 12:37:41,144 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:37:41,158 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:37:42,591 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:37:48,338 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:48,876 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:37:48,887 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:49,341 - INFO - Fetched 59 items successfully.
+2025-09-26 12:37:49,908 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:37:52,130 - INFO - Item ID 14 has 0 variations.
+2025-09-26 12:37:52,210 - INFO - Item 'Dasani 500' with ID 14 added to cart (Qty: 1).
+2025-09-26 12:38:01,450 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:38:01,467 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:38:01,484 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:38:05,633 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:38:11,266 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:38:11,280 - INFO - Fetched 59 items successfully.
+2025-09-26 12:38:12,178 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:38:13,398 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:38:13,414 - INFO - Fetched 59 items successfully.
+2025-09-26 12:38:14,160 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:38:14,178 - INFO - Fetched 59 items successfully.
+2025-09-26 12:38:15,593 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:38:16,953 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:38:19,076 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:38:21,886 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:38:21,900 - INFO - Fetched 0 items successfully.
+2025-09-26 12:38:21,912 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:38:21,943 - INFO - Fetched 59 items successfully.
+2025-09-26 12:38:52,240 - INFO - Order with ID 1 updated successfully.
+2025-09-26 12:38:53,154 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:38:54,505 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:38:55,890 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:39:13,325 - INFO - Order info fetched successfully for order_id: 2
+2025-09-26 12:39:20,303 - INFO - Order with ID 2 and its items deleted successfully.
+2025-09-26 12:39:20,312 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:26,742 - INFO - Fetched 59 items successfully.
+2025-09-26 12:39:27,317 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:39:27,329 - INFO - Fetched 59 items successfully.
+2025-09-26 12:39:27,910 - INFO - Fetched 59 items successfully.
+2025-09-26 12:39:28,534 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:39:29,811 - INFO - Item ID 2 has 0 variations.
+2025-09-26 12:39:29,891 - INFO - Item 'Chips Masala' with ID 2 added to cart (Qty: 1).
+2025-09-26 12:39:39,432 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:39,450 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:39,468 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:39,485 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:42,111 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:43,484 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:39:56,364 - INFO - Fetched 59 items successfully.
+2025-09-26 12:39:56,880 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:39:56,892 - INFO - Fetched 59 items successfully.
+2025-09-26 12:39:57,467 - INFO - Fetched 59 items successfully.
+2025-09-26 12:39:57,990 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:39:59,678 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:59,695 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:59,711 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:59,726 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:39:59,741 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:40:01,334 - INFO - Fetched 2 orders successfully.
+2025-09-26 12:40:13,227 - INFO - Order with ID 2 and its items deleted successfully.
+2025-09-26 12:40:13,240 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:40:16,991 - INFO - Order with ID 1 and its items deleted successfully.
+2025-09-26 12:40:17,002 - INFO - Fetched 0 orders successfully.
+2025-09-26 12:52:24,099 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:24,716 - INFO - Fetched 0 orders successfully.
+2025-09-26 12:52:24,729 - INFO - Fetched 0 orders successfully.
+2025-09-26 12:52:25,832 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:26,264 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:52:26,276 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:26,611 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:52:36,840 - INFO - Item ID 19 has 0 variations.
+2025-09-26 12:52:36,932 - INFO - Item 'Afya' with ID 19 added to cart (Qty: 1).
+2025-09-26 12:52:38,953 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:52:41,591 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:52:43,356 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:52:46,166 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:52:47,239 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:47,810 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:52:47,826 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:48,407 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:49,011 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:52:53,189 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:52:53,207 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:52:54,166 - INFO - Fetched 2 tables successfully.
+2025-09-26 12:52:55,090 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:52:56,563 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:52:56,578 - INFO - Fetched 0 items successfully.
+2025-09-26 12:52:56,591 - INFO - Fetched 59 items successfully.
+2025-09-26 12:52:57,429 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:52:57,443 - INFO - Fetched 59 items successfully.
+2025-09-26 12:53:04,367 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:53:05,660 - INFO - Fetched 1 orders successfully.
+2025-09-26 12:59:11,025 - INFO - Fetched 14 categories successfully.
+2025-09-26 12:59:11,045 - INFO - Fetched 59 items successfully.
+2025-09-26 13:16:29,176 - INFO - Fetched 59 items successfully.
+2025-09-26 13:16:29,827 - INFO - Fetched 1 orders successfully.
+2025-09-26 13:16:29,870 - INFO - Fetched 1 orders successfully.
+2025-09-26 13:16:33,216 - INFO - Fetched 1 orders successfully.

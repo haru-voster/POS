@@ -123,7 +123,7 @@ class AllOrders:
                 action_btn_print.setFixedSize(15, 15)
                 action_btn_print.setStyleSheet("background: transparent; border: none;")
                 action_btn_print.clicked.connect(lambda _, order_id=order_id: self.printOrder(order_id))
-                # Delete Button
+                # #Delete Button
                 # action_btn_delete = QPushButton()
                 # action_btn_delete.setIcon(QIcon('icon/delete.png'))  # Replace with your icon path
                 # action_btn_delete.setToolTip("Delete Order")

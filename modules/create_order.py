@@ -182,6 +182,10 @@ class CreateOrder:
             name_label = QLabel(f"{item_name} ({CURRENCY}{item_price:.2f})")
             name_label.setStyleSheet("font-size: 14px; color: #333; font-weight: bold;")
             name_label.setFixedWidth(400)
+                        # Quantity label
+            qty_label = QLabel(str(item_qty))
+            qty_label.setAlignment(Qt.AlignCenter)
+            qty_label.setFixedWidth(25)
 
             qty_label = QLabel(str(item_qty))
             qty_label.setStyleSheet("font-size: 12px; color: #333;")
@@ -197,18 +201,30 @@ class CreateOrder:
 
             increment_button = QPushButton("+")
             increment_button.setStyleSheet(
-                "background-color: #1FD655; color: white; font-weight: bold; padding: 5px; border-radius: 5px;"
+                "background-color: #1FD655; color: white; font-weight: bold; padding: 0px; border-radius: 0px;"
             )
             increment_button.setFixedSize(20, 20)
             increment_button.clicked.connect(lambda checked, cart_id=cart_id: self.updateQuantity(cart_id, 1))
 
             decrement_button = QPushButton("-")
             decrement_button.setStyleSheet(
-                "background-color: #FF5C5C; color: white; font-weight: bold; padding: 5px; border-radius: 5px;"
+                "background-color: #FF5C5C; color: white; font-weight: bold; padding: 0px; border-radius: 0px;"
             )
             decrement_button.setFixedSize(20, 20)
             decrement_button.clicked.connect(lambda checked, cart_id=cart_id: self.updateQuantity(cart_id, -1))
+            # Quantity control layout  [ -  qty  + ]
+            qty_layout = QHBoxLayout()
+            qty_layout.setContentsMargins(0, 0, 0, 0)
+            qty_layout.setSpacing(2)
+            qty_layout.addWidget(decrement_button)
+            qty_layout.addWidget(qty_label)
+            qty_layout.addWidget(increment_button)
 
+            # Then add qty_layout into your row (right side of item)
+            row_layout = QHBoxLayout()
+            row_layout.addWidget(name_label, stretch=2)
+            row_layout.addWidget(qty_label, stretch=1)
+            row_layout.addLayout(qty_layout, stretch=0)
             item_layout.addWidget(name_label)
             item_layout.addWidget(total_label)
             item_layout.addWidget(decrement_button)

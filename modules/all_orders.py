@@ -124,15 +124,15 @@ class AllOrders:
                 action_btn_print.setStyleSheet("background: transparent; border: none;")
                 action_btn_print.clicked.connect(lambda _, order_id=order_id: self.printOrder(order_id))
                 # Delete Button
-                action_btn_delete = QPushButton()
-                action_btn_delete.setIcon(QIcon('icon/delete.png'))  # Replace with your icon path
-                action_btn_delete.setToolTip("Delete Order")
-                action_btn_delete.setFixedSize(15, 15)
-                action_btn_delete.setStyleSheet("background: transparent; border: none;")
-                action_btn_delete.clicked.connect(lambda _, order_id=order_id: self.deleteOrder(order_id))
+                # action_btn_delete = QPushButton()
+                # action_btn_delete.setIcon(QIcon('icon/delete.png'))  # Replace with your icon path
+                # action_btn_delete.setToolTip("Delete Order")
+                # action_btn_delete.setFixedSize(15, 15)
+                # action_btn_delete.setStyleSheet("background: transparent; border: none;")
+                # action_btn_delete.clicked.connect(lambda _, order_id=order_id: self.deleteOrder(order_id))
 
                 action_layout.addWidget(action_btn_print)
-                action_layout.addWidget(action_btn_delete)
+                # action_layout.addWidget(action_btn_delete)
 
                 # Set layout for the action widget
                 action_widget.setLayout(action_layout)
@@ -149,27 +149,27 @@ class AllOrders:
     def viewOrder(self, order_id):
         print(order_id)
 
-    def deleteOrder(self, order_id):
-        try:
-            reply = QMessageBox.question(
-                None,
-                "Delete Item",
-                "Are you sure you want to delete this order?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No
-            )
+    # def deleteOrder(self, order_id):
+    #     try:
+    #         reply = QMessageBox.question(
+    #             None,
+    #             "Delete Item",
+    #             "Are you sure you want to delete this order?",
+    #             QMessageBox.Yes | QMessageBox.No,
+    #             QMessageBox.No
+    #         )
 
-            if reply == QMessageBox.Yes:
-                print(f"Deleting order with ID: {order_id}")  # Debugging log
-                if DBService.delete_order(order_id):
-                    self.loadOrdersFromDatabase()
-                else:
-                    QMessageBox.information(None, "Deleted", "Order Deleted" )
-            else:
-                print("Order deletion canceled.")  # If user clicks No
+    #         if reply == QMessageBox.Yes:
+    #             print(f"Deleting order with ID: {order_id}")  # Debugging log
+    #             if DBService.delete_order(order_id):
+    #                 self.loadOrdersFromDatabase()
+    #             else:
+    #                 QMessageBox.information(None, "Deleted", "Order Deleted" )
+    #         else:
+    #             print("Order deletion canceled.")  # If user clicks No
 
-        except Exception as e:
-            LogService.log_error(f"Error in deleteOrder method: {e}", exc=True)
+    #     except Exception as e:
+    #         LogService.log_error(f"Error in deleteOrder method: {e}", exc=True)
 
     def searchOrders(self):
         """Search orders based on order_id, name, mobile, or address."""

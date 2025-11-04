@@ -73,7 +73,7 @@ class CreateOrder:
 
         self.items_browser_list_widget.clear()
 
-        # 🔹 List of fallback images
+        #  List of fallback images
         fallback_images = [
             "images/chipregular.jpeg",
             "images/chipmasala.jpeg",
@@ -104,7 +104,7 @@ class CreateOrder:
                 item_id, item_name, item_category, item_price, mtype, variation_names, variation_prices = row
                 item_image = None
 
-            # 🔹 If no image in DB, use rotating fallback
+            # image in DB, use rotating fallback
             if not item_image or item_image.strip() == "":
                 item_image = fallback_images[index % len(fallback_images)]
 

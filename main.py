@@ -17,7 +17,7 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
 
-# Patch the uic.loadUi function to use resource_path automatically
+
 from PyQt5 import uic
 _original_loadUi = uic.loadUi
 def loadUi(ui_file, baseinstance=None, **kwargs):
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     font = QFont("Roboto", 11)
     app.setFont(font)
-
+ 
     dashboard = Dashboard()
     dashboard.show()
 
